@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://0.0.0.0:4000/copyright</loc>
+    <lastmod>2019-09-19</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://0.0.0.0:4000/getting-started/first-steps</loc>
+    <lastmod>2019-09-19</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://0.0.0.0:4000/introduction</loc>
+    <lastmod>2019-09-19</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  </urlset>

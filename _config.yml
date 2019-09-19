@@ -1,0 +1,75 @@
+# The public documentation URL, used for sitemap.xml
+url: "https://docs.telerik.com/fiddler-core"
+
+# Exclude files which should not be in the output
+exclude: [README.md, Gemfile, Gemfile.lock]
+exclude_navigation: ["knowledge-base/*"]
+
+## List your directory names and order here, like this:
+navigation:
+    getting-started:
+        title: Getting Started
+        position: 1
+
+## Product title
+product: "Progress Telerik FiddlerCore Embedded Engine"
+platform: fiddler-core
+
+## The application virtual path
+baseurl: /fiddler-core
+
+## Assign layout and category per different paths
+defaults:
+-
+    scope:
+        path: ""
+    values:
+        layout: "documentation"
+        category: "default"
+        product: "fiddler-core"
+        editable: true
+
+has_kb_portal: false
+has_api_reference: false
+
+# Feedback Form ID
+ff-sheet-id: 8b4343434343434b4c8
+
+# The google services configuration
+google_analytics: UA-111455-1
+google_tag_manager: GTM-6X92
+gcs_engine: '001595215763381649090:ddknw1m8sne'
+gcs_api_key: 'AIzaSyCY-QFufu2mx3iNQRGS6zSjjkkI4HNvUTU'
+
+edit_repo_url: https://github.com/telerik/fiddler-core-docs/edit/master
+
+footer:
+-
+  title: "Getting Started"
+  links:
+    "Try Now": https://www.telerik.com/download/fiddler-core
+-
+  title: "Community"
+  links:
+    "Forums": https://www.telerik.com/forums/fiddler
+    "Blogs": https://www.telerik.com/blogs/tag/fiddler
+    "Feedback Portal": https://feedback.telerik.com/fiddler-core
+  
+footer_social: 
+    facebook: https://www.facebook.com/Telerik/
+    youtube: https://www.youtube.com/user/TelerikInc
+    linkedin: https://www.linkedin.com/showcase/telerik/ 
+    twitter: https://twitter.com/TelerikFiddler/ 
+
+# Assets pipeline configuration
+assets:
+    cachebust: soft
+    js_compressor: uglifier
+
+## Do not edit below this line
+safe: false
+markdown: MarkdownProcessor
+kramdown:
+    toc_levels: 2..3
+    smart_quotes: ["quot", "quot", "quot", "quot"]
+    input: GFM

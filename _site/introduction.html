@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="turbolinks-root" content="/fiddler-core/">
+        <title>Introduction | Progress Telerik FiddlerCore Embedded Engine </title>
+        <meta name="description" content="" />
+        <meta name="restype" content="documentation">
+        <link rel="shortcut icon" href="/fiddler-core/favicon.ico"/>
+
+        
+        <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2018.3.1017/styles/kendo.common.min.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:300,400,500,700" />
+        <link rel="stylesheet" type="text/css" href="https://d6vtbcy3ong79.cloudfront.net/fonts/1.1.5/css/metric.min.css">
+        <link type="text/css" rel="stylesheet" href="/fiddler-core/assets/bundle-0e91418cb6037a1f6d99b5dcf397f2e3c095ed107e62e294a4faa3165f960291.css">
+        
+        
+        
+        <script type="text/javascript" src="/fiddler-core/assets/main-7a09d232a9c2fe9643ccdf0b1db12b8cbb1753cfc73e3495dd887296dcdd0091.js"></script>
+        
+        
+        <script src="https://cdn.cookielaw.org/consent/2fffb1c2-c64a-4fcc-bc19-a4adecbc5ebf.js" type="text/javascript" charset="UTF-8"></script> 
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-6X92');</script>
+        <!-- End Google Tag Manager -->
+        <script>	
+            var prd = 'Progress Telerik FiddlerCore Embedded Engine';
+            var e = document.documentElement;	
+            e.className = e.className.replace(/(^|\s)no-js(\s|$)/i, "$2");	
+        </script>
+        
+
+        <script src="https://kendo.cdn.telerik.com/2018.3.1017/js/kendo.web.min.js"></script>
+        <script src="//cdn.optimizely.com/js/2380340583.js"></script>
+    </head>
+
+
+
+<body role="document" class="layout-documentation brand environment-">
+
+
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-6X92"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager -->
+
+    <!-- Qualaroo for telerik.com -->
+    <script> var _kiq = _kiq || []; </script>
+    <script>
+      window.setTimeout(function() {
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://s3.amazonaws.com/ki.js/24100/4Nr.js';
+        document.body.appendChild(s);
+      });
+    </script>
+
+    <script>
+      hasDataLang =  false ;
+      
+      
+    </script>
+
+<link rel="stylesheet" type="text/css" href="https://d6vtbcy3ong79.cloudfront.net/fonts/1.1.5/css/metric.min.css"><link rel="stylesheet" type="text/css" href="https://d6vtbcy3ong79.cloudfront.net/telerik-navigation/2.0.42/css/index.min.css"><nav id="js-tlrk-nav" class="TK-Nav TK-Nav--Shadow TK-Nav--Loading TK-Nav--Fluid" data-tlrk-nav-version="2.0.42" data-tlrk-nav-template="nav-fiddler-core-csa-abs-component"><aside class="TK-Hat"><div class="TK-container"><figure class="TK-Hat-Brand"><a href="https://www.progress.com" class="TK-PRGS-Logo"><svg xmlns="http://www.w3.org/2000/svg" width="94" height="40" viewBox="0 0 512 120"><path fill="#5ce500" d="M95.52 29.33v51a3.93 3.93 0 0 1-1.78 3.08l-1.67 1-12.72 7.35-8.59 5-1.78 1V42.6L21.23 15 43.91 1.93 46 .74a3.94 3.94 0 0 1 3.56 0L81 18.9l14.51 8.38v2.05zM58.36 48.72l-9.79-5.66-22.91-13.23a4 4 0 0 0-3.56 0L1.77 41.57 0 42.6l34.49 19.91v39.83l20.3-11.73 1.79-1a3.94 3.94 0 0 0 1.78-3.08V48.72zM0 82.43l23.86 13.78V68.63z"/><path fill="#4b4e52" d="M148.09 27.28h-26v70.48h11.55V70.1h14.57c15.77 0 24.45-7.7 24.45-21.69 0-6.35-2.4-21.12-24.55-21.12m12.78 21.31c0 7.95-4.12 11.19-14.24 11.19h-13v-22.1h14.57c8.56 0 12.71 3.57 12.71 10.91M207 46.41l.87.42-2 10.42-1.35-.42a11.32 11.32 0 0 0-3.34-.51c-10.79 0-11.67 8.59-11.67 19v22.44h-10.64V46h10v6.24c2.73-4.2 6-6.37 10.37-6.9a14.55 14.55 0 0 1 7.76 1.07M233.29 45c-8.42 0-15.16 3.2-19.5 9.27-4.56 6.37-5.23 13.85-5.23 17.74 0 16.36 9.7 26.92 24.73 26.92 18.26 0 24.73-14.71 24.73-27.3 0-7.25-2.15-13.82-6-18.51-4.41-5.31-10.87-8.12-18.7-8.12m0 44.38c-8.37 0-13.57-6.66-13.57-17.37s5.2-17.55 13.57-17.55S247 61.23 247 71.78c0 10.83-5.24 17.56-13.66 17.56m114.55-42.93l.87.42-2 10.42-1.35-.42a11.26 11.26 0 0 0-3.33-.51c-10.78 0-11.66 8.59-11.66 19v22.44h-10.66V46h10v6.24c2.73-4.2 6-6.37 10.37-6.9a14.54 14.54 0 0 1 7.73 1.06m38.4 34.76l-.2.57c-2.23 6.36-7.57 7.7-11.65 7.7-8.09 0-13.3-5.37-13.81-14.09h36.59l.13-1a31.26 31.26 0 0 0 .12-4.12v-.93C396.93 54.78 387.48 45 374 45c-7.9 0-14.37 3.1-18.73 9a30.85 30.85 0 0 0-5.54 18c0 16 9.95 26.74 24.74 26.74 11.45 0 19.33-5.82 22.2-16.38l.33-1.2h-10.7zM361 66.05c.9-7.17 5.81-11.73 12.79-11.73 5.33 0 11.64 3.1 12.52 11.73H361zm-60.7-15.71c-3.45-3.58-8.06-5.39-13.76-5.39-15.69 0-22.83 13.81-22.83 26.63 0 13.16 7.06 26.44 22.83 26.44a18.33 18.33 0 0 0 13.35-5.42c0 2.28-.1 4.45-.16 5.38-.58 8.54-4.68 12.51-12.91 12.51-4.47 0-9.61-1.59-10.6-6l-.22-1h-10.54l.17 1.41c1.1 9.12 9.11 14.79 20.9 14.79 10.34 0 17.7-3.9 21.28-11.26 1.73-3.55 2.6-8.72 2.6-15.37V46h-10.13v4.34zm-13.11 38.15c-3.74 0-12.43-1.69-12.43-17.37 0-10.3 4.87-16.7 12.71-16.7 6.06 0 12.52 4.39 12.52 16.7 0 10.87-4.79 17.37-12.81 17.37m159.67-6.31c0 8.23-6.83 16.53-22.09 16.53-13.5 0-21.53-5.85-22.61-16.45l-.15-1.1h10.52l.21.84c1.29 6.38 7.37 7.72 12.24 7.72 5.34 0 11-1.72 11-6.54 0-2.44-1.59-4.18-4.73-5.16-1.86-.55-4.15-1.2-6.56-1.87-4.16-1.16-8.47-2.38-11.12-3.29-6.56-2.35-10.33-6.93-10.33-12.56 0-10.43 10.16-15.11 20.22-15.11 13.46 0 20.42 5.07 21.3 15.49l.09 1.07H434.5l-.14-.82c-1-6-7-6.9-10.48-6.9-3 0-10 .53-10 5.5 0 2.25 1.93 3.91 5.89 5.06 1.18.33 2.94.78 5 1.31 4.22 1.09 9.48 2.46 12.13 3.37 6.59 2.32 9.93 6.67 9.93 13m49.39 0c0 8.23-6.83 16.53-22.09 16.53-13.5 0-21.53-5.85-22.61-16.45l-.11-1.09H462l.12.74c1.29 6.38 7.37 7.72 12.24 7.72 5.34 0 11-1.72 11-6.54 0-2.44-1.59-4.18-4.72-5.16-1.86-.55-4.15-1.2-6.57-1.87-4.16-1.16-8.46-2.38-11.11-3.29-6.57-2.35-10.33-6.93-10.33-12.56 0-10.43 10.16-15.11 20.22-15.11 13.46 0 20.42 5.07 21.29 15.49l.09 1.07H483.9l-.14-.82c-1-6-7-6.9-10.48-6.9-3 0-9.95.53-9.95 5.5 0 2.25 1.93 3.91 5.89 5.06 1.18.33 2.94.78 5 1.31 4.22 1.09 9.48 2.46 12.13 3.37 6.58 2.32 9.93 6.67 9.93 13m8.43-30.78a7.37 7.37 0 1 1 7.29-7.37 7.23 7.23 0 0 1-7.29 7.37m0-13.49a6.12 6.12 0 1 0 6 6.12 5.91 5.91 0 0 0-6-6.12m-.85 7.49v2.46h-2.17v-7.74h3.62a2.58 2.58 0 0 1 2.86 2.7 2.26 2.26 0 0 1-1.49 2.34l1.77 2.7H506l-1.49-2.46h-.68zm1.21-3.49h-1.21v1.73h1.21a.86.86 0 0 0 1-.85.88.88 0 0 0-1-.89"/></svg> </a><a href="https://www.telerik.com" class="TK-PRGS-TLRK-Logo TK-Print"><svg xmlns="http://www.w3.org/2000/svg" width="162" height="24" viewBox="0 0 400.4 60.3"><path fill="#7c878e" d="M396.7 18.4c-2 0-3.7 1.6-3.7 3.7 0 2.2 1.7 3.7 3.7 3.7s3.7-1.6 3.7-3.7c0-2.2-1.7-3.7-3.7-3.7zm0 6.8c-1.7 0-3-1.3-3-3.1s1.3-3.1 3-3.1 3 1.3 3 3.1-1.3 3.1-3 3.1z"/><path fill="#7c878e" d="M398.5 21.5c0-.9-.6-1.4-1.4-1.4h-1.8V24h1.1v-1.2h.3l.8 1.2h1.2l-.9-1.4c.4-.1.7-.5.7-1.1zm-1.6.4h-.6V21h.6c.3 0 .5.2.5.4 0 .4-.2.5-.5.5zm-103.5-7.7h-28.5v2.6h12.7v32.4h2.9V16.8h12.9zm7.4 9.1c-6.7 0-10.9 5.6-10.9 13.4 0 7.9 4.7 12.9 11.8 12.9 3 0 5.5-.7 7.4-2.2v-2.7c-2.2 1.8-4.3 2.5-7.1 2.5-5.2 0-9.2-3.6-9.2-10.4H311v-1c-.2-7.4-3.6-12.5-10.2-12.5zm-8 11.1c.7-5.5 3.9-8.6 8-8.6 5 0 7.1 4.1 7.3 8.6h-15.3zM315 12.1h2.9v37.1H315zm18.1 11.2c-6.7 0-10.9 5.6-10.9 13.4 0 7.9 4.7 12.9 11.8 12.9 3 0 5.5-.7 7.4-2.2v-2.7c-2.2 1.8-4.3 2.5-7.1 2.5-5.2 0-9.2-3.6-9.2-10.4h18.2v-1c-.1-7.4-3.6-12.5-10.2-12.5zm-8 11.1c.7-5.5 3.9-8.6 8-8.6 5 0 7.1 4.1 7.3 8.6h-15.3zm25-6.5v-4h-2.9v25.3h2.9V31.5c1.2-3.2 3.6-5.5 6.7-5.5.9 0 1.7.2 2.3.5v-2.8c-.6-.2-1.3-.3-2.2-.3-3.1-.1-5.7 2-6.8 4.5zm12.1-4h2.8v25.3h-2.8zm1.5-9.7c-1.1 0-1.9.9-1.9 1.9 0 1.1.9 1.9 1.9 1.9s1.9-.9 1.9-1.9-.8-1.9-1.9-1.9zm26.5 9.7h-3.7l-12.8 11V12.1h-2.9v37.1h2.9v-13l13.2 13h3.5l-13.8-13.8z"/><path fill="#5ce500" d="M11.2 14.9L0 21.3l17.4 10.1v20.1l11.2-6.4c.5-.3.9-1 .9-1.6V24.4L13 14.9c-.5-.3-1.3-.3-1.8 0z"/><path fill="#5ce500" d="M12.1 48.4V34.5L0 41.5zM25 .2c-.5-.3-1.3-.3-1.8 0L10.7 7.4l24.1 13.9v27.9L47.3 42c.5-.3.9-1 .9-1.6V13.6L25 .2z"/><path fill="#4b4e52" d="M117.9 22.5c-4.3 0-7.7 1.6-9.8 4.7-2.3 3.2-2.6 7-2.6 9 0 8.3 4.9 13.6 12.5 13.6 9.2 0 12.5-7.4 12.5-13.8 0-3.7-1.1-7-3.1-9.4-2.3-2.7-5.6-4.1-9.5-4.1zm0 22.4c-4.2 0-6.9-3.4-6.9-8.8 0-5.5 2.6-8.9 6.9-8.9 4.2 0 6.9 3.4 6.9 8.8 0 5.5-2.7 8.9-6.9 8.9zM74.8 13.6H61.7v35.6h5.8v-14h7.4c8 0 12.4-3.9 12.4-11-.1-3.1-1.3-10.6-12.5-10.6zM74.1 30h-6.6V18.9h7.4c4.3 0 6.4 1.8 6.4 5.5 0 4-2.1 5.6-7.2 5.6zm26.6-7.3c-2.2.3-3.9 1.4-5.2 3.5V23h-5.1v26.1h5.4V37.9c0-5.2.4-9.6 5.9-9.6.6 0 1.1.1 1.7.3l.7.2 1-5.3-.4-.2c-1.2-.5-2.6-.7-4-.6zm145 12.1c-1.3-.5-4-1.2-6.1-1.7-1-.3-1.9-.5-2.5-.7-2-.6-3-1.4-3-2.6 0-2.5 3.5-2.8 5-2.8 1.8 0 4.8.5 5.3 3.5l.1.4h5.2v-.5c-.4-5.3-4-7.8-10.8-7.8-5.1 0-10.2 2.4-10.2 7.6 0 2.8 1.9 5.2 5.2 6.3 1.3.5 3.5 1.1 5.6 1.7 1.2.3 2.4.7 3.3.9 1.6.5 2.4 1.4 2.4 2.6 0 2.4-2.9 3.3-5.6 3.3-2.5 0-5.5-.7-6.2-3.9l-.1-.4h-5.2l.1.6c.5 5.4 4.6 8.3 11.4 8.3 7.7 0 11.2-4.2 11.2-8.4-.1-3-1.8-5.2-5.1-6.4zm-94-9.6c-1.7-1.8-4.1-2.7-7-2.7-7.9 0-11.5 7-11.5 13.5 0 6.6 3.6 13.4 11.5 13.4 2.7 0 5-1 6.7-2.7 0 1.2 0 2.3-.1 2.7-.3 4.3-2.4 6.3-6.5 6.3-2.3 0-4.9-.8-5.4-3.1l-.1-.5H134l.1.7c.6 4.6 4.6 7.5 10.6 7.5 5.2 0 8.9-2 10.8-5.7.9-1.8 1.3-4.4 1.3-7.8V23.1h-5.1v2.1zm-6.6 19.3c-1.9 0-6.3-.9-6.3-8.8 0-5.2 2.5-8.4 6.4-8.4 3.1 0 6.3 2.2 6.3 8.4.1 5.5-2.3 8.8-6.4 8.8zm75.6-9.7c-1.3-.5-4-1.2-6.1-1.7-1-.3-1.9-.5-2.5-.7-2-.6-3-1.4-3-2.6 0-2.5 3.5-2.8 5-2.8 1.8 0 4.8.5 5.3 3.5l.1.4h5.2v-.5c-.4-5.3-4-7.8-10.8-7.8-5.1 0-10.2 2.4-10.2 7.6 0 2.8 1.9 5.2 5.2 6.3 1.3.5 3.5 1.1 5.6 1.7 1.2.3 2.4.7 3.3.9 1.6.5 2.4 1.4 2.4 2.6 0 2.4-2.9 3.3-5.6 3.3-2.5 0-5.5-.7-6.2-3.9l-.1-.4h-5.2l.1.6c.5 5.4 4.6 8.3 11.4 8.3 7.7 0 11.2-4.2 11.2-8.4 0-3-1.7-5.2-5.1-6.4zm-19.9 0c-.3-7.3-5-12.2-11.9-12.2-4 0-7.3 1.6-9.5 4.5-1.8 2.4-2.8 5.7-2.8 9.1 0 8.1 5 13.5 12.5 13.5 5.8 0 9.8-2.9 11.2-8.3l.2-.6h-5.4l-.1.3c-1.1 3.2-3.8 3.9-5.9 3.9-4.1 0-6.7-2.7-7-7.1h18.5l.1-.5c.1-.6.1-1.5.1-2.1v-.5zm-18.4-1.6c.5-3.6 2.9-5.9 6.5-5.9 2.7 0 5.9 1.6 6.3 5.9h-12.8zm-10.5-10.5c-2.2.3-3.9 1.4-5.2 3.5V23h-5.1v26.1h5.4V37.9c0-5.2.4-9.6 5.9-9.6.6 0 1.1.1 1.7.3l.7.2 1-5.3-.4-.2c-1.2-.5-2.6-.7-4-.6zm84.8-1.2c0-.9-.6-1.4-1.4-1.4h-1.8V24h1.1v-1.2h.3l.8 1.2h1.2l-.9-1.4c.4-.1.7-.5.7-1.1zm-1.5.4h-.6V21h.6c.3 0 .5.2.5.4 0 .4-.2.5-.5.5z"/><path fill="#4b4e52" d="M255 18.4c-2 0-3.7 1.6-3.7 3.7 0 2.2 1.7 3.7 3.7 3.7s3.7-1.6 3.7-3.7c0-2.2-1.7-3.7-3.7-3.7zm0 6.8c-1.7 0-3-1.3-3-3.1s1.3-3.1 3-3.1 3 1.3 3 3.1-1.4 3.1-3 3.1z"/></svg></a></figure><div class="TK-Hat-Aside TK--Desktop" id="js-tlrk-nav-progress-menu"><h4 class="TK-Drawer-Title TK-dn">About Progress</h4><ul class="TK-Hat-Menu"><li class="TK-Hat-Menu-Item"><a href="https://www.progress.com/company" class="TK-Hat-Menu-Link">Company <i class="TK-Arrow"></i></a><ul class="TK-Dropdown TK-Dropdown--Small TK-Dropdown--White"><li><a href="https://www.progress.com/company" class="TK-Dropdown-Link">Company Overview</a></li><li><a href="https://www.progress.com/company/leadership#exec" class="TK-Dropdown-Link">Leadership</a></li><li><a href="http://investors.progress.com" class="TK-Dropdown-Link">Investor Relations</a></li><li><a href="http://investors.progress.com/releases.cfm" class="TK-Dropdown-Link">Press Releases</a></li><li><a href="https://www.progress.com/company/press-coverage" class="TK-Dropdown-Link">Press Coverage</a></li><li><a href="https://www.progress.com/events" class="TK-Dropdown-Link">Events</a></li><li><a href="https://www.progress.com/company/awards" class="TK-Dropdown-Link">Awards</a></li><li><a href="https://www.progress.com/blogs" class="TK-Dropdown-Link">Corporate Blog</a></li><li><a href="https://www.progress.com/customers" class="TK-Dropdown-Link">Customers</a></li><li><a href="https://www.progress.com/company/careers" class="TK-Dropdown-Link">Careers</a></li><li><a href="https://www.progress.com/company/offices" class="TK-Dropdown-Link">Offices</a></li></ul></li><li class="TK-Hat-Menu-Item"><a href="https://www.progress.com/products" class="TK-Hat-Menu-Link">Technology <i class="TK-Arrow"></i></a><ul class="TK-Dropdown TK-Dropdown--Medium TK-Dropdown--White"><li><a href="https://www.progress.com/app-dev-platform" class="TK-Dropdown-Link">Cloud Native App Dev Platform</a></li><li><a href="https://www.progress.com/cognitive-services" class="TK-Dropdown-Link">Cognitive Services</a></li><li><a href="https://www.progress.com/sitefinity-cms" class="TK-Dropdown-Link">Web Content Management</a></li><li><a href="https://www.progress.com//ui-ux-tools" class="TK-Dropdown-Link">UI/UX Tools</a></li><li><a href="https://www.progress.com/datadirect-connectors" class="TK-Dropdown-Link">Secure Data Connectivity and Integration</a></li><li><a href="https://www.progress.com/managed-file-transfer" class="TK-Dropdown-Link">Secure Managed File Transfer</a></li><li><a href="https://www.progress.com/openedge" class="TK-Dropdown-Link">OpenEdge</a></li><li><a href="https://www.progress.com/network-monitoring" class="TK-Dropdown-Link">Network Monitoring</a></li></ul></li><li class="TK-Hat-Menu-Item"><a href="https://www.progress.com/services" class="TK-Hat-Menu-Link">Services <i class="TK-Arrow"></i></a><ul class="TK-Dropdown TK-Dropdown--Medium TK-Dropdown--White"><li><a href="https://www.progress.com/services/consulting" class="TK-Dropdown-Link">Consulting</a></li><li><a href="https://www.progress.com/services/education" class="TK-Dropdown-Link">Education</a></li><li><a href="https://www.progress.com/services/modernization" class="TK-Dropdown-Link">Modernization</a></li><li><a href="https://www.progress.com/services/outsourcing" class="TK-Dropdown-Link">Outsourcing</a></li></ul></li></ul></div></div></aside><section class="TK-Bar"><div class="TK-container TK-Bar-container"><figure class="TK-TLRK-Brand"><a href="https://www.telerik.com" class="TK-TLRK-Logo"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 720 600"><path fill="#4b4e52" d="M0 208.6h151.2v14.2H83.1v171.4H67.6V222.8H0v-14.2zm194.5 174.9c15 0 26.3-3.7 37.8-13.4v14.8c-10 8.2-23.2 11.8-39 11.8-37.4 0-62.6-26.6-62.6-68.6 0-41.3 22.4-71 58.1-71 35 0 53.2 26.6 53.2 65.5v5.5h-96.5c0 36.4 21.1 55.4 49 55.4zm-48.4-67.6h81.3c-.8-23.6-12.1-45.3-38.7-45.3-22.1 0-38.9 16.3-42.6 45.3zm131.8 78.3h-15V197.8h15v196.4zm85.5-10.7c15 0 26.3-3.7 37.8-13.4v14.8c-10 8.2-23.2 11.8-39 11.8-37.4 0-62.6-26.6-62.6-68.6 0-41.3 22.4-71 58.1-71 35 0 53.2 26.6 53.2 65.5v5.5h-96.5c0 36.4 21.1 55.4 49 55.4zM315 315.9h81.3c-.8-23.6-12.1-45.3-38.7-45.3-22.1 0-38.9 16.3-42.6 45.3zm179.6-42.1c-3.7-1.5-7.6-2.4-12.4-2.4-16.3 0-29.2 11.8-35.7 29v93.7h-15V259.9h15v21.5c6-13.4 19.7-24.2 36.3-24.2 5.2 0 8.7.8 11.8 1.8v14.8zm22.6-44.4c-5.8 0-10.3-4.5-10.3-10.3 0-5.5 4.5-10.3 10.3-10.3 5.8 0 10.3 4.8 10.3 10.3 0 5.8-4.5 10.3-10.3 10.3zm7.5 164.8h-15V260.1h15v134.1zm132.9 0h-18.7l-69.8-68.9v68.9h-15V197.8h15v120.9l67.6-58.6h19.7l-71.6 61.3 72.8 72.8zm42.9-123.7c-10.7 0-19.5-8.3-19.5-19.7 0-11.4 8.9-19.7 19.5-19.7s19.5 8.3 19.5 19.7c0 11.4-8.9 19.7-19.5 19.7m0-36.2c-8.9 0-16 6.8-16 16.5s7.2 16.5 16 16.5 16-6.8 16-16.5-7.2-16.5-16-16.5m-2.3 20.1v6.6h-5.8v-20.7h9.7c4.6 0 7.6 2.7 7.6 7.2 0 3.2-1.5 5.3-3.9 6.2l4.8 7.2h-6.5l-3.9-6.6-2 .1zm3.2-9.3h-3.2v4.6h3.2c1.7 0 2.7-.8 2.7-2.3s-1-2.3-2.7-2.3"/></svg></a></figure><ul class="TK-Products-Menu"><li class="TK-Products-Menu-Item TK-Static"><button type="button" class="TK-Products-Menu-Item-Button">FiddlerCore <i class="TK-Arrow"></i></button><aside id="js-tlrk-nav-dash" class="TK-Dash TK-Dropdown TK-Dropdown--Full TK-Dropdown--Gray TK-Dropdown---Mobile"><div class="TK-container"><div class="TK-row TK-BG"><div class="TK-col-6"><div class="TK-Bundles"><h3 class="TK-Dash-Title">Product Bundles</h3><a href="https://www.telerik.com/devcraft" class="TK-Bundle" data-match-exact-path><h4 class="TK-Bundle-Title TK-Best-Value">DevCraft</h4><p class="TK-Bundle-Description">All Telerik .NET tools and Kendo UI JavaScript components in one package. Now enhanced with:</p><ul class="TK-Bundle-list"><li>Conversational UI</li><li>Online Training</li><li>Document Processing Library</li></ul></a></div></div><div class="TK-col-18"><div class="TK-row"><div class="TK-col-8"><h3 class="TK-Dash-Title">Web</h3><div class="TK-Dash-Links"><a href="https://www.telerik.com/kendo-ui" class="TK-Dash-Link" data-match-exact-path>Kendo UI</a> <a href="https://www.telerik.com/kendo-jquery-ui" class="TK-Dash-Link TK-Dash-Link--Indented" data-match-exact-path>UI for jQuery</a> <a href="https://www.telerik.com/kendo-angular-ui" class="TK-Dash-Link TK-Dash-Link--Indented" data-match-exact-path>UI for Angular</a> <a href="https://www.telerik.com/kendo-react-ui" class="TK-Dash-Link TK-Dash-Link--Indented" data-match-exact-path>UI for React</a> <a href="https://www.telerik.com/kendo-vue-ui" class="TK-Dash-Link TK-Dash-Link--Indented" data-match-exact-path>UI for Vue</a> <a href="https://www.telerik.com/products/aspnet-ajax.aspx" class="TK-Dash-Link" data-match-exact-path>UI for ASP.NET AJAX</a> <a href="https://www.telerik.com/aspnet-mvc" class="TK-Dash-Link" data-match-exact-path>UI for ASP.NET MVC</a> <a href="https://www.telerik.com/aspnet-core-ui" class="TK-Dash-Link" data-match-exact-path>UI for ASP.NET Core</a> <a href="https://www.telerik.com/blazor-ui" class="TK-Dash-Link" data-match-exact-path>UI for Blazor</a> <a href="https://www.telerik.com/products/silverlight/overview.aspx" class="TK-Dash-Link" data-match-exact-path>UI for Silverlight</a> <a href="https://www.telerik.com/php-ui" class="TK-Dash-Link" data-match-exact-path>UI for PHP</a> <a href="https://www.telerik.com/jsp-ui" class="TK-Dash-Link" data-match-exact-path>UI for JSP</a></div><h3 class="TK-Dash-Title">Mobile</h3><div class="TK-Dash-Links"><a href="https://www.telerik.com/xamarin-ui" class="TK-Dash-Link" data-match-exact-path>UI for Xamarin</a> <a href="https://www.progress.com/nativescript" class="TK-Dash-Link" data-match-exact-path>NativeScript OSS framework</a></div></div><div class="TK-col-8"><h3 class="TK-Dash-Title">Desktop</h3><div class="TK-Dash-Links"><a href="https://www.telerik.com/products/wpf/overview.aspx" class="TK-Dash-Link" data-match-exact-path>UI for WPF</a> <a href="https://www.telerik.com/universal-windows-platform-ui" class="TK-Dash-Link" data-match-exact-path>UI for UWP</a> <a href="https://www.telerik.com/products/winforms.aspx" class="TK-Dash-Link" data-match-exact-path>UI for WinForms</a></div><h3 class="TK-Dash-Title">Reporting &amp; Mocking</h3><div class="TK-Dash-Links"><a href="https://www.telerik.com/products/reporting.aspx" class="TK-Dash-Link" data-match-exact-path>Telerik Reporting</a> <a href="https://www.telerik.com/report-server" class="TK-Dash-Link" data-match-exact-path>Telerik Report Server</a> <a href="https://www.telerik.com/products/mocking.aspx" class="TK-Dash-Link" data-match-exact-path>Telerik JustMock</a></div><h3 class="TK-Dash-Title">Automated Testing</h3><div class="TK-Dash-Links"><a href="https://www.telerik.com/teststudio" class="TK-Dash-Link" data-match-exact-path>Test Studio</a> <a href="https://www.telerik.com/teststudio-dev" class="TK-Dash-Link" data-match-exact-path>Test Studio Dev Edition</a></div><h3 class="TK-Dash-Title">CMS</h3><div class="TK-Dash-Links"><a href="https://www.progress.com/sitefinity-cms" class="TK-Dash-Link" data-match-exact-path>Sitefinity</a></div></div><div class="TK-col-8"><h3 class="TK-Dash-Title">UX Design</h3><div class="TK-Dash-Links"><a href="https://www.progress.com/unite-ux" class="TK-Dash-Link TK-New" data-match-exact-path>Unite UX</a></div><h3 class="TK-Dash-Title">Document Management</h3><div class="TK-Dash-Links"><a href="https://www.telerik.com/document-processing-libraries" class="TK-Dash-Link" data-match-exact-path>Telerik Document Processing</a></div><h3 class="TK-Dash-Title">Innovations Lab</h3><div class="TK-Dash-Links"><a href="https://www.telerik.com/ar-vr-lab" class="TK-Dash-Link" data-match-exact-path>VR DataViz</a></div><h3 class="TK-Dash-Title">Free Tools</h3><div class="TK-Dash-Links"><a href="https://www.telerik.com/fiddler" class="TK-Dash-Link" data-match-exact-path>Fiddler</a> <a href="https://www.telerik.com/justassembly" class="TK-Dash-Link" data-match-exact-path>JustAssembly</a> <a href="https://www.telerik.com/products/decompiler.aspx" class="TK-Dash-Link" data-match-exact-path>JustDecompile</a> <a href="http://converter.telerik.com" class="TK-Dash-Link" data-match-exact-path>VB.NET to C# Converter</a> <a href="https://www.telerik.com/teststudio/testing-framework" class="TK-Dash-Link" data-match-exact-path>Testing Framework</a></div></div></div><div class="TK-Dash-Footer"><a href="https://www.telerik.com/all-products" class="TK-Dash-Featured-Link" data-match-exact-path>View all products</a></div></div></div></div></aside><div class="TK-Dash-Extension TK--Mobile"></div></li></ul><div class="TK-Drawer" id="js-tlrk-nav-drawer"><ul class="TK-Context-Menu TK-Menu"><li class="TK-Menu-Item"><a href="https://www.telerik.com/fiddler/fiddlercore" class="TK-Menu-Item-Link" data-match-exact-path>Overview</a></li></ul><ul class="TK-Aside-Menu"><li class="TK-Aside-Menu-Item"><a href="https://www.telerik.com/search" class="TK-Aside-Menu-Link" title="Search" data-match-exact-path><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 512 512"><path d="M504.4 464L378.9 338.5c25.6-34.8 40.8-77.7 40.8-124.2 0-115.7-94.1-209.8-209.8-209.8C94.2 4.5 0 98.6 0 214.3 0 330 94.2 424.1 209.9 424.1c50.5 0 96.9-17.9 133.1-47.8l124.5 124.5c5.1 5.1 11.8 7.6 18.4 7.6s13.3-2.5 18.4-7.6c10.3-10.1 10.3-26.6.1-36.8zM52.2 214.3c0-87 70.7-157.7 157.7-157.7s157.7 70.7 157.7 157.7c0 41-15.7 78.3-41.4 106.4-.3.3-.7.6-1 .9-.7.7-1.3 1.4-1.9 2.2-28.7 29.7-68.9 48.2-113.4 48.2-87 0-157.7-70.7-157.7-157.7z"/></svg> <span class="TK-Aside-Menu-Link-Text">Search</span></a></li><li class="TK-Aside-Menu-Item"><a href="https://store.progress.com/shopping-cart" data-empty-url="https://www.telerik.com/purchase.aspx#individual-products" class="TK-Aside-Menu-Link js-tlrk-nav-shopping-cart-counter-container" title="Shopping cart" data-match-exact-path><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 512 512"><path d="M437.9 331.4H190.5l-39.7-164.9H493zM150.8 166.5l-23.9-88.2H19.8" fill="none" stroke="#000000" stroke-width="36.9967" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/><circle cx="200.9" cy="406.6" r="30.4"/><circle cx="427.5" cy="406.6" r="30.4"/></svg> <span class="TK-Aside-Menu-Link-Text">Shopping cart</span></a></li><li class="TK-Aside-Menu-Item TK--Auth TK-dn" id="js-tlrk-nav-auth-container"><button type="button" class="TK-Aside-Menu-Button"><span class="TK-Avatar"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="{[AvatarUrl]}" alt="Your Avatar" class="TK-Avatar-Media" id="js-tlrk-nav-avatar-image"> </span><span class="TK-Aside-Menu-Button-Text">Your Account <i class="TK-Arrow"></i></span></button><ul class="TK-Dropdown TK-Dropdown--Gray TK-Dropdown--Small TK-Dropdown--Mobile"><li><a href="https://www.telerik.com/account/" class="TK-Dropdown-Link" data-match-exact-path><span>Account Overview</span></a></li><li><a href="https://www.telerik.com/account/profile" class="TK-Dropdown-Link" data-match-exact-path><span>Edit Profile</span></a></li><li><a href="https://www.telerik.com/account/manage-payment-profile" class="TK-Dropdown-Link" data-match-starts-with-path><span>Payment Profiles</span></a></li><li><a href="https://www.telerik.com/account/renewals-upgrades" class="TK-Dropdown-Link" data-match-exact-path><span>Renewals &amp; Upgrades</span></a></li><li><a href="https://www.telerik.com/account/support-tickets/my-support-tickets" class="TK-Dropdown-Link" data-match-starts-with-path><span><svg class="TK-Support-Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.170532 14.0736" width="16" height="11"><defs><clipPath id="a"><path d="M0 10.555h15.878V0H0z"/></clipPath></defs><g clip-path="url(#a)" transform="matrix(1.33333 0 0 -1.33333 0 14.074)"><path d="M15.178.7H.7v7.57c0 .875.71 1.585 1.585 1.585h11.308c.876 0 1.585-.71 1.585-1.585zM2.409 7.143h10.665M2.409 4.643h1.08M4.534 4.643h8.541" fill="none" stroke="#4d4f52" stroke-width="1.4" stroke-miterlimit="10"/></g></svg> Support Tickets</span></a></li><li><a data-href="{[LogoutUrl]}" class="TK-Dropdown-Link" id="js-tlrk-nav-log-out" rel="nofollow"><span class="TK-Dropdown-Link-Spacer">Log out</span></a></li></ul></li><li class="TK-Aside-Menu-Item TK--Not-Auth" id="js-tlrk-nav-not-auth-container"><a href="https://www.telerik.com/account/" title="Your Account" class="TK-Aside-Menu-Button" data-match-exact-path><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 512 512" fill="#4d4f52"><path d="M493 408.8c-.1-21.8-15.4-22.3-33.7-29.7L374 344.9c-1.5-.6-3-1.2-4.4-1.8-15.2-6.9-28.6-16.4-33.5-23.2l-.2-.2-.1-.1c-.3-.4-.6-.9-.8-1.3l-.2-.4v-.1l-.2-.2c-2.3-3.4-4.6-4.9-6.5-4.3l-.1.1h-.1l-.1.1h-.1l-.1.1c-2.3 1.2-1.8-.1-2.8-2.6-2.3-6.2-6.1-18.1-6.7-19.9-.9-3.3-3.3 5.1-2.7-3.9l1-16.4c1.6-1.7 2.8-3.1 3.7-4 5.6-6.4 5.9-23.2 8.7-27.3 2.8-4.1 8.4-5 13.9-24.1 5.6-19.1 12.4-46.3 5.2-46.8-1.8-.1-3.7 1-5.8 2.8 1.3-7 3.9-22.9 4.5-34.6.8-15.5-1.8-55.1-10.5-69.5-5.5-9.1-16.6-18.1-27.6-25.1-6.6-4.2-13.2-7.7-18.6-10.1-16.1-7.1-66.8-3.9-84 0-19.5 4.4-33.3 16.6-42 31.2-8.8 14.7-12.6 58.2-11.9 73.7.4 6.9 4.5 18.6 5.6 25.8.6 3.7 1.2 3.8 1.6 6.4-.7-.3-1.4-.4-2.1-.4-7.2.5-.4 27.7 5.2 46.8 5.6 19.1 11.1 20 13.9 24.1 2.8 4.1 3.2 20.9 8.8 27.3.9 1 2.2 2.5 3.9 4.2l1.1 13.4 1.9 7.4c-.9-2.1-2.6-3.5-3.3-.7l-7.2 21.9c-.3-.3-.6-.6-1.1-.6-2.3-2-5.5-.3-8.3 4.5-4.2 7-18.2 17.2-34.3 24.4l-.2.9-.2.9-.1.4c-1.3.6-2.6 1.1-3.9 1.6L48 379.5c-18.3 7.3-33.6 7.8-33.7 29.7L.2 483.5h512L493 408.8z"/></svg> <span class="TK-Aside-Menu-Button-Text">Login</span></a></li><li class="TK-Aside-Menu-Item TK-bn"><a href="https://www.telerik.com/contact" class="TK-Aside-Menu-Button" title="Contact Us" data-match-starts-with-path><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 512 512" fill="#4d4f52"><path d="M481 176.3V151L241 1 1 151v27.6l-.3.4.3.2V451h480V176.3zm-59.1-9.1L241 302.9 60.1 167.2 241 54.1l180.9 113.1zM436 406H46V212.9l195 146.2 195-146.3V406z"/></svg> <span class="TK-Aside-Menu-Button-Text">Contact Us</span></a></li><li class="TK-Aside-Menu-Item"><a href="https://www.telerik.com/purchase/fiddlercore" class="TK-Button TK-Button--CTA">Pricing</a></li></ul></div><div class="TK-Drawer-Extension"></div><div class="TK-Aside TK--Mobile"><ul class="TK-Aside-Menu"><li class="TK-Aside-Menu-Item"><button type="button" class="TK-Aside-Menu-Button TK-Aside-Menu-Button--Toggle-Drawer" id="js-tlrk-nav-drawer-button"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 512 512" fill="#4d4f52"><path d="M0 91h512v60H0zM0 237.3h512v60H0zM0 383.5h512v60H0z"/></svg></button></li></ul></div></div></section><button type="button" class="TK-Nav-Overlay" id="js-tlrk-nav-overlay">close mobile menu</button></nav><script async nomodule src="https://d6vtbcy3ong79.cloudfront.net/telerik-navigation/2.0.42/js/index.min.js"></script><script async type="module" src="https://d6vtbcy3ong79.cloudfront.net/telerik-navigation/2.0.42/js/index.min.mjs"></script>
+
+  <script>
+    
+     var searchContainer = $(".global-search");
+
+     function hideSearch(e){
+      if (!searchContainer.is(e.target) && 
+          searchContainer.has(e.target).length === 0 && 
+          $(e.target).parents("#refine-search-popup").length === 0) {
+            setTimeout(function(e) {
+              searchContainer.removeClass("show-search");
+              $(document).off('click', hideSearch);
+            }, 200)
+      }
+    }
+
+    function showSearch() {
+
+      searchContainer.toggleClass("show-search")
+          .one("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(e) {
+              if (searchContainer.hasClass("show-search")) {
+                searchContainer.find("input:first")
+                    .focus();
+                $(document).on("click", hideSearch);
+              }
+          });
+    }
+
+    $(document).off("click", ".search-icon")
+               .on("click", ".search-icon", showSearch);
+    
+
+    function navigate(e) {
+        trackItemFromCurrentPage('docs-navigation', e.target.children[e.target.selectedIndex].text);
+        window.open(e.target.value, "_blank");
+    }
+    
+      $(document)
+        .off("change", "#nav-dropdown")
+        .on("change", "#nav-dropdown", navigate);
+  </script>
+
+
+<div id="content">
+
+  <div class="container-fluid">
+  <div class="row">
+  <div class="side-nav col-sm-4 col-md-3 col-lg-2">
+    <div id="page-tree">
+</div>
+<script>
+  $("#page-tree").kendoTreeView({
+    dataSource: {
+      transport: {
+        read: {
+          url: "/fiddler-core/default.json",
+          dataType: "json"
+        }
+      },
+      schema: {
+        model: {
+          id: "path",
+          children: "items",
+          hasChildren: "items"
+        }
+      }
+    },
+    messages: {
+      loading: " "
+    },
+    select: preventParentSelection,
+    template: navigationTemplate("/fiddler-core/"),
+    dataBound: expandNavigation("introduction.html")
+  });
+</script>
+
+
+
+  </div>
+  <div class="content-wrapper col-sm-8 col-sm-offset-4 col-md-offset-3 col-lg-8 col-lg-offset-2">
+    <div class="row" style="overflow: hidden;">
+      <div class="col-md-10 col-md-offset-1 mb-40">
+        
+        <div id="navbar" class="nav navbar-collapse row">
+            <div class="col-xs-2">
+              <span class="k-icon all-components-expanded-icon"></span>
+              <a class="button all-components" ><span class="item-expanded"></span></a>
+            </div>
+              
+              
+                <div class="global-search">
+                  <form action="/fiddler-core/search" method="get">
+  <div class="search-input-container">
+    <input id="local-search" placeholder="Search for &hellip;" name="q" />
+    <div id='refine-search-container'>
+        <div id='refine-search-button' class='unselectable'>
+          <span id='refine-search-label' data-bind='text: label'></span>
+          <span class='k-icon k-i-arrow-chevron-down'></span>
+        </div>
+      </div>
+      <div id="refine-search-popup" style="display: none">
+        <ul>
+          <li>
+            <label class="custom-checkbox unselectable"><input type="checkbox" data-bind="checked: documentation"  disabled="true"  /><span class="k-icon k-i-check"></span>Search in Documentation</label>
+          </li>
+          
+          
+        </ul>
+      </div>
+  </div>
+</form>
+
+<script>
+    var gcsInstance = '001595215763381649090:ddknw1m8sne';
+    var gcsKey = 'AIzaSyCY-QFufu2mx3iNQRGS6zSjjkkI4HNvUTU';
+    isKbPage =  false ;
+    siteHasKbPortal = 'false';
+    hasApiReference =  false ;
+</script>
+
+<script type="text/javascript" src="/fiddler-core/assets/search-results-e3c3d6c8013372bcf34e786c443a8f29fa8f697dba377b977f83af5199f242d3.js"></script>
+
+                </div>
+              
+              
+          </div>
+
+        
+
+        
+        <p class="breadcrumbs">
+          
+          
+          
+          
+          
+        </p>
+        
+
+        
+        <article>
+        
+
+        
+        <h1 id="welcome-to-fiddlercore-embedded-engine"><a href="#welcome-to-fiddlercore-embedded-engine">Welcome to FiddlerCore Embedded Engine</a></h1>
+
+<p>Thank you for choosing Progress<sup>®</sup> Telerik<sup>®</sup> FiddlerCore Embedded Engine!  </p>
+
+<p>FiddlerCore Embedded Engine is a .NET Class library you can integrate into your .NET Framework applications. There is also a .NET Standard 2.0 flavor of FiddlerCore that allows using it on any platform implementing .NET Standard.</p>
+
+<p>Telerik FiddlerCore allows you to capture and modify HTTP and HTTPS traffic just like Fiddler, without any of the Fiddler UI.</p>
+
+<h2 id="licensing"><a href="#licensing">Licensing</a></h2>
+
+<p>License agreement and detailed information about different licenses and which one you should purchase is explained in the <a href="https://www.telerik.com/purchase/license-agreement/fiddlercore">Licensing</a>       </p> 
+        </article>
+
+        
+
+      </div>
+    </div><!-- /row right content -->
+  </div>
+
+  <div class="additional-content-column col-md-2 visible-lg">
+    
+      <div class="article-toc" data-turbolinks="false">
+
+    <div class="side-title">In this article</div>
+
+    <ul class="nav list-unstyled" id="toc"></ul>
+
+  </div><!-- /cols right content -->
+
+
+    
+    
+      <div class="related-articles">
+
+    <div class="side-title">Related articles</div>
+
+    <ul class="nav list-unstyled" id="related-articles"></ul>
+
+  </div><!-- /cols right content -->
+
+
+    <div class="support-info-area">
+      <span class="additional-info-content">Not finding the help you need?</span>
+      <div>
+        <a class="btn btn-action" href='https://www.telerik.com/account/support-tickets?pid=' target="_blank" onclick="trackItemFromCurrentPage('docs-contact-support', 'Progress Telerik FiddlerCore Embedded Engine')">Contact support</a>
+      </div>
+      
+      <a class="btn-edit-article" href="https://github.com/telerik/fiddler-core-docs/edit/master/introduction.md" target="_blank">Improve this article</a>
+      
+    </div>
+  </div>
+</div>
+</div>
+
+<script>
+    var mainSdkExamples = "";
+    var sdkRepoPath = "";
+    var sdkCdnRepoPath = "";
+    $(".read-prev").hover(function() {
+        $(".title-prev").show();
+    }, function() {
+        $(".title-prev").hide();
+    });
+
+    $(".read-next").hover(function() {
+        $(".title-next").show();
+    }, function() {
+        $(".title-next").hide();
+    });
+
+    $(".all-components").click(function() {
+      var showComponentsClassName = 'show-components';
+      $(".all-components").toggleClass(showComponentsClassName);
+      
+      var sideNav = $('.side-nav');
+      sideNav.toggleClass(showComponentsClassName);
+      if (sideNav.hasClass(showComponentsClassName)) {
+        scrollNodeIntoView($('#page-tree').data('kendoTreeView').select());
+      }
+    });
+
+    $(".api-index").toggleClass(function() {
+      return $.grep(
+        $(this).find("ul"),
+        function(ul) { return $(ul).children().length > 20; }
+      ).length > 0 ? "api-columns" : "";
+    });
+
+    $(".api-columns > div").addClass("components pb-20 mb-20");
+</script>
+
+
+  <div id="push" class="pt-60 pb-40"></div> <!-- Sticky Footer -->
+
+</div>
+
+<div id="footer" class="container-fluid pb-40">
+  
+  
+<div class="row feedback-row">
+   <div class="col-sm-8 col-sm-offset-4 col-md-offset-3 col-lg-8 col-lg-offset-2">
+       <div class="row">
+           <div class="col-md-10 col-md-offset-1">
+               <div class="row feedback">
+                   <div class="col-xs-8">
+                       <h4>Was this article helpful?</h4>
+                   </div>
+                   <div class="col-xs-4 text-right">
+                       <button data-value="yes" id="yesButton">Yes</button>
+                       &nbsp;/&nbsp;
+                       <button data-value="no" id="noButton">No</button>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="dialog-overlay">
+    <div class="feedback-dialog dialog dialog-enter">
+        <div id="feedback-container">
+        <div id="feedback-window-container">
+            <div id="feedback-form-window">
+            <h3 class="mt-0 mb-5">Give article feedback</h3>
+            <p>Tell us how we can improve this article</p>
+            <span id="feedback-form-popup-container"></span>
+            <form id="feedback-form">
+                <div id="feedback-checkbox-area">
+                <input id="hidden-sheet-id" type="hidden" value="8b4343434343434b4c8">
+                <label>
+                    <input type="checkbox" data-bind="checked: outdatedSample" /> Code samples are inaccurate / outdated.
+                </label>
+                <span class="required-field" data-bind="visible: outdatedSample"></span>
+                <textarea id="feedback-code-sample-text-input" placeholder="Please, specify more details ..." class="feedback-extw__textarea"
+                    data-bind="visible: outdatedSample, value: inaccurateOutdatedCodeSamplesText">
+                </textarea>
+                <label>
+                    <input type="checkbox" data-bind="checked: otherMoreInformation" /> I expected to find other / more information.
+                </label>
+                <span class="required-field" data-bind="visible: otherMoreInformation"></span>
+                <textarea id="feedback-more-information-text-input" class="feedback-extw__textarea" placeholder="Please, specify what information can be added ..."
+                    data-bind="visible: otherMoreInformation, value: otherMoreInformationText">
+                </textarea>
+                <label>
+                    <input type="checkbox" data-bind="checked: textErrors" /> There are typos / broken links / broken page elements.
+                </label>
+                <span class="required-field" data-bind="visible: textErrors"></span>
+                <textarea id="feedback-text-errors-text-input" class="feedback-extw__textarea" placeholder="Please, specify what needs to be fixed ..."
+                    data-bind="visible: textErrors, value: typosLinksElementsText">
+                </textarea>
+                <label>
+                    <input type="checkbox" data-bind="checked: inaccurateContent" /> Content is inaccurate / outdated.
+                </label>
+                <span class="required-field" data-bind="visible: inaccurateContent"></span>
+                <textarea id="feedback-inaccurate-content-text-input" class="feedback-extw__textarea" placeholder="Please, specify which conent ..."
+                    data-bind="visible: inaccurateContent, value: inaccurateOutdatedContentText">
+                </textarea>
+                <label>
+                    <input type="checkbox" data-bind="checked: otherFeedback" /> Other
+                </label>
+                <span class="required-field" data-bind="visible: otherFeedback"></span>
+                <textarea id="feedback-other-text-input" placeholder="Please, enter more details or not listed feedback ..." class="feedback-extw__textarea"
+                    data-bind="visible: otherFeedback, value: textFeedback">
+                </textarea>
+                <input id="feedback-email-input" type="email" placeholder="email (optional)" data-email-msg="Email format is not valid."
+                    class="feedback-extw__input input" data-bind="value: email" />
+                  <label>
+                    <input type="checkbox" data-bind="checked: acceptFeedbackContact" /> By checking this box you consent to Progress contacting you by email about your response on this page.
+                  </label>
+                </div>
+            </form>
+            <div class="feedback-extw__foot">
+                <p class="mt-30 mb-0" style="text-align: right;">
+                <button class="button ghost dialog-hide">Cancel</button>
+                <button class="button dialog-hide" type="submit">Submit</button>
+                </p>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        initFeedbackForm({
+            dialog: ".dialog-overlay",
+            closeButtons: ".dialog-hide",
+            container: ".feedback"
+        });
+    });
+</script>
+
+  
+  <div class="row mt-60">
+    <div class="col-lg-8 col-lg-offset-2">
+      <div class="row">
+      <div class="col-md-12 col-lg-10 col-lg-offset-1">
+      <div class="row">
+        
+          
+            <div class="col-sm-6 mb-20">
+                <h6 class="mt-0 mb-10">Getting Started</h6>
+                <ul class="list-unstyled">
+                  
+                    <li><a href="https://www.telerik.com/download/fiddler-everywhere" target="_blank">Download Now</a></li>
+                  
+                </ul>
+            </div>
+          
+            <div class="col-sm-6 mb-20">
+                <h6 class="mt-0 mb-10">Community</h6>
+                <ul class="list-unstyled">
+                  
+                    <li><a href="https://www.telerik.com/forums/fiddler" target="_blank">Forums</a></li>
+                  
+                    <li><a href="https://www.telerik.com/blogs/tag/fiddler" target="_blank">Blogs</a></li>
+                  
+                    <li><a href="https://feedback.telerik.com/fiddler-everywhere" target="_blank">Feedback Portal</a></li>
+                  
+                </ul>
+            </div>
+          
+        
+      </div>
+      <div class="row copyright">
+       <div class="col-sm-4 social-icons">
+          <span class="sticky">
+            <a class="social-icon" href="https://www.facebook.com/Telerik/" title=""><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+<path d="M13.766,32.155V17.559H8.854V11.87h4.912V7.675c0-4.869,2.973-7.52,7.316-7.52c2.08,0,3.868,0.155,4.39,0.224v5.088
+	l-3.013,0.001c-2.362,0-2.819,1.122-2.819,2.769v3.632h5.634l-0.734,5.688H19.64v14.597H13.766z"/>
+</svg>
+</a>
+            <a class="social-icon" href="https://twitter.com/TelerikFiddler/" title=""><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+<path fill="#231F20" d="M32,6.076c-1.178,0.522-2.442,0.875-3.771,1.034c1.355-0.813,2.396-2.1,2.887-3.632
+	c-1.269,0.752-2.674,1.298-4.169,1.593c-1.198-1.276-2.904-2.073-4.792-2.073c-3.626,0-6.566,2.939-6.566,6.565
+	c0,0.515,0.058,1.016,0.17,1.496C10.303,10.785,5.466,8.171,2.228,4.199c-0.565,0.97-0.889,2.097-0.889,3.3
+	c0,2.278,1.159,4.287,2.92,5.464c-1.076-0.034-2.088-0.329-2.974-0.821c0,0.027,0,0.055,0,0.083c0,3.181,2.263,5.834,5.267,6.438
+	c-0.551,0.15-1.131,0.23-1.73,0.23c-0.423,0-0.834-0.041-1.235-0.118c0.835,2.608,3.26,4.507,6.133,4.56
+	c-2.247,1.761-5.078,2.811-8.154,2.811c-0.53,0-1.052-0.031-1.566-0.092c2.905,1.862,6.356,2.949,10.064,2.949
+	c12.076,0,18.679-10.004,18.679-18.679c0-0.285-0.007-0.568-0.02-0.849C30.007,8.549,31.12,7.393,32,6.076"/>
+</svg>
+</a>
+            <a class="social-icon" href="https://www.youtube.com/user/TelerikInc" title=""><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve">
+<path d="M506.887,153.632c0,0-5.003-35.283-20.354-50.82c-19.469-20.393-41.293-20.494-51.301-21.687
+c-71.647-5.179-179.121-5.179-179.121-5.179h-0.223c0,0-107.472,0-179.121,5.179c-10.008,1.194-31.824,1.295-51.301,21.687
+c-15.351,15.537-20.346,50.82-20.346,50.82S0,195.065,0,236.497v38.843c0,41.433,5.12,82.865,5.12,82.865
+s4.995,35.283,20.346,50.82c19.476,20.393,45.06,19.748,56.455,21.885C122.883,434.839,256,436.054,256,436.054
+s107.585-0.162,179.232-5.341c10.008-1.194,31.831-1.295,51.301-21.687c15.351-15.537,20.354-50.82,20.354-50.82
+S512,316.773,512,275.341v-38.843C512,195.065,506.887,153.632,506.887,153.632z M203.87,322.913v-144.36l137.342,72.18 L203.87,322.913z"/>
+</svg></a>
+            <a class="social-icon" href="https://www.linkedin.com/showcase/telerik/" title=""><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+<path d="M7.81,29V9.652H1.379V29H7.81z M4.596,7.009c2.243,0,3.638-1.486,3.638-3.342C8.192,1.768,6.838,0.324,4.638,0.324
+	C2.438,0.324,1,1.768,1,3.667c0,1.856,1.396,3.342,3.554,3.342H4.596L4.596,7.009z M11.37,29h6.43V18.195
+	c0-0.579,0.042-1.156,0.213-1.569c0.465-1.155,1.521-2.352,3.3-2.352c2.325,0,3.257,1.774,3.257,4.375v10.35H31V17.906
+	c0-5.943-3.173-8.708-7.404-8.708c-3.469,0-4.992,1.939-5.838,3.259H17.8V9.651h-6.43C11.454,11.467,11.37,28.999,11.37,29L11.37,29
+	z"/>
+</svg>
+</a>
+          </span>
+       </div>
+       <div class="col-sm-8">
+         <p>Copyright &copy; 2019 Progress Software Corporation and/or its subsidiaries or affiliates.<br /> All Rights Reserved.</p>
+
+         <p>Progress, Telerik, and certain product names used herein are trademarks or registered trademarks of Progress Software Corporation and/or one of its subsidiaries or affiliates in the U.S. and/or other countries. See <a href="https://www.progress.com/legal/trademarks">Trademarks</a> for appropriate markings.</p>
+       </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+
+<script src="https://da189i1jfloii.cloudfront.net/js/kinvey-html5-sdk-3.10.1.min.js"></script>
+</body>
+</html>
