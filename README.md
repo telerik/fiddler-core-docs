@@ -1,5 +1,5 @@
 <h1>
-<a name="fiddler-public-documentation" class="anchor" href="#fiddler-public-documentation"><span class="mini-icon mini-icon-link"></span></a>Fiddler Public Documentation</h1>
+<a name="fiddler-core-public-documentation" class="anchor" href="#fiddler-core-public-documentation"><span class="mini-icon mini-icon-link"></span></a>FiddlerCore Public Documentation</h1>
 
 <p>Welcome to the GitHub repo for <a href="http://www.telerik.com/fiddler/fiddlercore">FiddlerCore Embedded Engine</a> <a href="https://docs.telerik.com/fiddler-core">Documentation</a>. This repository contains the source content--written in Markdown--that we use to power the FiddlerCore Embedded Engine. 
 
