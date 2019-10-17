@@ -11,6 +11,14 @@ navigation:
         title: Getting Started
         position: 1
 
+    getting-started/installation:
+        title: Installation
+        position: 2
+
+    api-reference:
+        title: "Api Reference"
+        position: 23
+
 ## Product title
 product: "Progress Telerik FiddlerCore Embedded Engine"
 platform: fiddler-core
@@ -30,16 +38,16 @@ defaults:
         editable: true
 
 has_kb_portal: false
-has_api_reference: false
+has_api_reference: true
 
 # Feedback Form ID
-ff-sheet-id: 8b4343434343434b4c8
+ff-sheet-id: 2753d516-bb0c-85f5-3898-3620db972174
 
 # The google services configuration
 google_analytics: UA-111455-1
 google_tag_manager: GTM-6X92
-gcs_engine: '001595215763381649090:ddknw1m8sne'
-gcs_api_key: 'AIzaSyCY-QFufu2mx3iNQRGS6zSjjkkI4HNvUTU'
+gcs_engine: '001595215763381649090:bhf815yqanw'
+gcs_api_key: 'AIzaSyDWHnF6UKhvS44zCVYggJysw98qCaInqiE'
 
 edit_repo_url: https://github.com/telerik/fiddler-core-docs/edit/master
 
@@ -60,6 +68,8 @@ footer_social:
     youtube: https://www.youtube.com/user/TelerikInc
     linkedin: https://www.linkedin.com/showcase/telerik/ 
     twitter: https://twitter.com/TelerikFiddler/ 
+
+api_reference_url: "api/"
 
 # Assets pipeline configuration
 assets:

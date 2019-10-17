@@ -17,3 +17,7 @@ Telerik FiddlerCore allows you to capture and modify HTTP and HTTPS traffic just
 ## Licensing
 
 License agreement and detailed information about different licenses and which one you should purchase is explained in the [Licensing](https://www.telerik.com/purchase/license-agreement/fiddlercore)		
+
+## Installation
+
+To learn how to install Telerik FiddlerCore Embedded Engine, visit the 
