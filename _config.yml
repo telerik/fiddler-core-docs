@@ -18,10 +18,14 @@ navigation:
     basic-usage:
         title: Basic Usage
         position: 1
-
-    api-reference:
-        title: "Api Reference"
-        position: 23
+    
+    knowledge-base:
+        title: Knowledge Base
+        position: 21
+    
+    licensing: 
+        title: Licensing
+        position: 1101
 
 ## Product title
 product: "Progress Telerik FiddlerCore Embedded Engine"
