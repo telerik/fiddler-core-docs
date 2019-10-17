@@ -4,7 +4,7 @@
       <span class="k-icon all-components-expanded-icon"></span>
    </div>
    <div class="global-search">
-      <form action="/devtools/justmock/search" method="get">
+      <form action="/fiddler-core/search" method="get">
          <div class="search-input-container">
             <input id="local-search" placeholder="Search for &hellip;" name="q" />
             <div id='refine-search-container'>
@@ -32,6 +32,6 @@
          siteHasKbPortal = '';
          hasApiReference =  true ;
       </script>
-      <script type="text/javascript" src="/devtools/justmock/assets/search-results.js"></script>
+      <script type="text/javascript" src="/fiddler-core/assets/search-results.js"></script>
    </div>
 </div>

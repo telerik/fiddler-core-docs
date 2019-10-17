@@ -15,6 +15,10 @@ navigation:
         title: Installation
         position: 2
 
+    basic-usage:
+        title: Basic Usage
+        position: 1
+
     api-reference:
         title: "Api Reference"
         position: 23
@@ -37,7 +41,7 @@ defaults:
         product: "fiddler-core"
         editable: true
 
-has_kb_portal: false
+has_kb_portal: true
 has_api_reference: true
 
 # Feedback Form ID
