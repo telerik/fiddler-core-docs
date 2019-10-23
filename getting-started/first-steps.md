@@ -1,6 +1,5 @@
 ---
 title: First Steps
-page_title: First Steps with FiddlerCore Embedded Engine
 slug: first-steps
 tags: first-steps
 published: True
@@ -9,9 +8,9 @@ position: 0
 
 # First Steps
 
-This article explains how to get started with FiddlerCore Embedded Engine
+This article explains everything you need to know about FiddlerCore Embedded Engine before you start.
 
-## Check the System Requirements
+## System Requirements
 
 You can check the requirements for FiddlerCore Embedded Engine suite in the [System Requirements]({%slug system-requirements%}) help article.
 
@@ -31,4 +30,4 @@ See how to get started with the library in the following articles:
 
 ## Next Steps
 
-[System Requirements]({%slug system-requirements%})
+[Check the system requirements]({%slug system-requirements%})

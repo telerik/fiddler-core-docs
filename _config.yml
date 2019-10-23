@@ -11,10 +11,6 @@ navigation:
         title: Getting Started
         position: 1
 
-    getting-started/installation:
-        title: Installation
-        position: 2
-
     basic-usage:
         title: Basic Usage
         position: 2

@@ -5,7 +5,7 @@ description: The differences between the Internal and Commercial versions of Fid
 slug: internal-vs-commercial
 tags: commercial,internal,license
 published: True
-position: 20
+position: 2
 ---
 
 ---

@@ -8,16 +8,22 @@ position: 0
 
 # Welcome to FiddlerCore Embedded Engine
 
-Thank you for choosing Progress<sup>®</sup> Telerik<sup>®</sup> FiddlerCore Embedded Engine!  
+Thank you for choosing Progress<sup>®</sup> Telerik<sup>®</sup> FiddlerCore Embedded Engine!
+
+## What Is FiddlerCore and Why Do I Need It?
 
 FiddlerCore Embedded Engine is a .NET Class library you can integrate into your .NET Framework applications. There is also a .NET Standard 2.0 flavor of FiddlerCore that allows using it on any platform implementing .NET Standard.
 
-Telerik FiddlerCore allows you to capture and modify HTTP and HTTPS traffic just like Fiddler, without any of the Fiddler UI.
+FiddlerCore allows you to capture and modify HTTP and HTTPS traffic just like Fiddler, without any of the Fiddler UI.
 
-## Licensing
+## Features at a Glance
 
-License agreement and detailed information about different licenses and which one you should purchase is explained in the [Licensing](https://www.telerik.com/purchase/license-agreement/fiddlercore)		
+- HTTP and HTTPS traffic capture and modification.
+- Powerful object model for content filtering and modification.
+- Store and reload web traffic.
+- Support for virtually any client application.
+- Support for most devices via mobile proxy settings.
 
-## Installation
+## Next Steps
 
-To learn how to install Telerik FiddlerCore Embedded Engine, visit the 
+[First steps with FiddlerCore]({%slug first-steps%})
