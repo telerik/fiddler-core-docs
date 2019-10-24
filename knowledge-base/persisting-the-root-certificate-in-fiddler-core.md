@@ -31,7 +31,7 @@ FiddlerCore uses different APIs for certificate creation than the Desktop Versio
 Since FiddlerCore is a library that can be used in other applications, the API won't force persisting the Certificate and leaves the implementation up to the developer. The following workarounds are examples that show different ways this can be achieved.
 
 ### Using MakeCert.dll with Application (Recommended)
-In this example, the MakeCert.dll is used with the ICertificateProvider5 Interface to store the Certificate Information. For example, in a console application prior to setting up FiddlerCore, call the `EnsureRootCertificate` method like below. This sample is taken from the [PersistCertificate](https://github.com/telerik/fiddler-core-demos/tree/master/PersistCertificate) in our Fiddler Core Demos Repo
+In this example, the MakeCert.dll is used with the ICertificateProvider5 Interface to store the Certificate Information. For example, call the `EnsureRootCertificate` method like below.
 
 ``` csharp
 	private static void EnsureRootCertificate()
