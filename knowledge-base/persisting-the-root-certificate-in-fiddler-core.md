@@ -1,9 +1,9 @@
 ---
-title: Certificate Creation in Fiddler Core and Fiddler Desktop
-description: Comparing the Certificate Creation Methods used in Fiddler Core and Fiddler Desktop
+title: Persisting the Root Certificate in Fiddler Core
+description: Article showing different methods for persisting the Certificate in Fiddler Core
 type: how-to
-page_title: FiddlerCore versus Fiddler Desktop Certificate Creation
-slug: fiddlercore-versus-fiddler-desktop-certificate-creation
+page_title: Reusing Certificates in Fiddler Core
+slug: persisting-the-root-certificate-in-fiddler-core
 position: 
 tags: Certificates, Bouncy Castle, MakeCert
 ticketid: 1429862
@@ -24,17 +24,14 @@ res_type: kb
 	</tbody>
 </table>
 
-
 ## Description
-FiddlerCore uses different APIs for certificate creation than the Desktop Version. By default, FiddlerCore includes the CertMaker and BCMakeCert assemblies for use with the Bouncy Castle API but doesn't keep the certificate for later use.
-
-In contrast, the Default Certificate creation in the Desktop Version uses the MakeCert.exe with the Windows Crypto API and does keep the Certificate for later use.
+FiddlerCore uses different APIs for certificate creation than the Desktop Version. By default, FiddlerCore includes the CertMaker and BCMakeCert assemblies for use with the Bouncy Castle API but doesn't persist the certificate by default. The Bouncy Castle API is recommended because it can be used across multiple platforms.
 
 ## Suggested Workarounds
-Use the 
+Since FiddlerCore is a library that can be used in other applications, the API won't force persisting the Certificate and leaves the implementation up to the developer. The following workarounds are examples that show different ways this can be achieved.
 
 ### Using MakeCert.dll with Application (Recommended)
-In this example, the MakeCert.dll is used with the ICertificateProvider Interface to store the Certificate Information. For example, in a console application prior to setting up FiddlerCore, call the `EnsureRootCertificate` method like below.
+In this example, the MakeCert.dll is used with the ICertificateProvider5 Interface to store the Certificate Information. For example, in a console application prior to setting up FiddlerCore, call the `EnsureRootCertificate` method like below. This sample is taken from the [PersistCertificate]() in our Fiddler Core Demos Repo
 
 ``` csharp
 	private static void EnsureRootCertificate()
@@ -62,31 +59,10 @@ In this example, the MakeCert.dll is used with the ICertificateProvider Interfac
 			CertMaker.trustRootCert();
 		}
 	}
-
-	private static void Main()
-	{
-		AttachEventListeners();
-
-		EnsureRootCertificate();
-
-		SetSAZProvider();
-
-		StartupFiddlerCore();
-
-		SetAllConnectionsProxySettingsToFiddlerCoreListenHostAndPort();
-
-		ExecuteUserCommands();
-
-		ResetAllConnectionsProxySettings();
-
-		Quit();
-	}	
 ```
 
 ### Store Certificate Keys in Application Settings
-This method was identified by Rick Strahl's blog post titled [Using FiddlerCore to Capture Http Requests with .NET](https://weblog.west-wind.com/posts/2014/jul/29/using-fiddlercore-to-capture-http-requests-with-net)
-
-Using Rick Strahl's cache-aware approach, when installing or uninstalling the certificate, handle the logic to cache the cert and keys. See the below code snippet from Rick Strahl's blog post.
+This method was identified by Rick Strahl's blog post titled [Using FiddlerCore to Capture Http Requests with .NET](https://weblog.west-wind.com/posts/2014/jul/29/using-fiddlercore-to-capture-http-requests-with-net). The approach store the certificate and keys in the Application Configuration. See the below code snippet from Rick Strahl's blog post.
 
 ``` csharp
 	// Installing the Certificate
@@ -122,7 +98,6 @@ Using Rick Strahl's cache-aware approach, when installing or uninstalling the ce
 		return true;
 	}
 
-	//	Example of Capturing in WinForms using FiddlerCore
 	public FiddlerCapture(StressTestForm form)
 	{
 		InitializeComponent();
