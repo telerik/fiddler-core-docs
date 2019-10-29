@@ -1,16 +1,16 @@
 <h1>
 <a name="fiddler-core-public-documentation" class="anchor" href="#fiddler-core-public-documentation"><span class="mini-icon mini-icon-link"></span></a>FiddlerCore Public Documentation</h1>
 
-<p>Welcome to the GitHub repo for <a href="http://www.telerik.com/fiddler/fiddlercore">FiddlerCore Embedded Engine</a> <a href="https://docs.telerik.com/fiddler-core">Documentation</a>. This repository contains the source content--written in Markdown--that we use to power the FiddlerCore Embedded Engine. 
+<p>Welcome to the GitHub repo for <a href="http://www.telerik.com/fiddler/fiddlercore">FiddlerCore</a> <a href="https://docs.telerik.com/fiddler-core">Documentation</a>. This repository contains the source content--written in Markdown--that we use to power the FiddlerCore. 
 
 <p>We believe that the documentation for a product is at its best when the content is a collaboration between the builders and consumers of that product. As such, this documentation is both public, and open sourced. That means you can clone this repository, read the docs off line, or even load the entire thing to an Apple Newton, if that's your thing.</p>
 
-<p>It also means that you can play a role in making our docs better for everyone, and if helping us make the FiddlerCore Embedded Engine docs better sounds interesting to you, read on.</p>
+<p>It also means that you can play a role in making our docs better for everyone, and if helping us make the FiddlerCore docs better sounds interesting to you, read on.</p>
 
 <h2>
 <a name="contributing" class="anchor" href="#contributing"><span class="mini-icon mini-icon-link"></span></a>Contributing</h2>
 
-<p>There are two ways you can contribute to the public FiddlerCore Embedded Engine documentation: either create an issue in this repository, or fork the repo, make the change and send us a pull request!</p>
+<p>There are two ways you can contribute to the public FiddlerCore documentation: either create an issue in this repository, or fork the repo, make the change and send us a pull request!</p>
 
 <ul>
 <li>
@@ -28,7 +28,7 @@ Description: The image for setting up the the foobar handler is missing. https:/
 <li>
 <p><strong>Send us a pull request</strong> - Creating an issue is great--and we certainly appreciate them--but what we really love are pull requests. So, if you find an issue in the docs, or even feel like creating new content, we'd be happy to have your contributions! If you're just getting started with open source, Git, and GitHub, we suggest you first read up on <a href="https://help.github.com/articles/fork-a-repo">forking repos</a> and <a href="https://help.github.com/articles/using-pull-requests">sending pull requests</a>, both great articles from the GitHub bootcamp.  </p>
 
-<p>Once you've read these--or you've already memorized them--you're ready to contribute to the FiddlerCore Embedded Engine docs. Start by creating a local clone of our repo either using <a href="http://windows.github.com/">GitHub for Windows</a>, <a href="http://mac.github.com/">GitHub for Mac</a> or your friendly command-line:</p>
+<p>Once you've read these--or you've already memorized them--you're ready to contribute to the FiddlerCore docs. Start by creating a local clone of our repo either using <a href="http://windows.github.com/">GitHub for Windows</a>, <a href="http://mac.github.com/">GitHub for Mac</a> or your friendly command-line:</p>
 
 <pre><code>git clone git@github.com:telerik/fiddler-core-docs.git
 </code></pre>
@@ -41,7 +41,7 @@ Description: The image for setting up the the foobar handler is missing. https:/
 <p>Each document in this repo contains a section of YAML Front Matter at the very top. This content, which looks like the text below, is used by our auto-import tool when content is processed for the <a href="http://www.fiddler2.com/docs">www.fiddler2.com/docs</a> site. Please don't edit the content in this section of a document.</p>
 
 <hr>
-<p>title: Add stuff to FiddlerCore Embedded Engine</p>
+<p>title: Add stuff to FiddlerCore</p>
 
 <p>slug: howto-add-stuff</p>
 
@@ -53,6 +53,6 @@ Description: The image for setting up the the foobar handler is missing. https:/
 </li>
 <li><p>When adding content or making changes, please use only standard Markdown syntax, and make sure to preview your additions or changes before sending us a pull request. </p></li>
 </ul>
-<p>Once you've made your changes, commit, pull, merge, push, and <a href="https://help.github.com/articles/using-pull-requests">send us a pull request</a>! We--and FiddlerCore Embedded Engine users everywhere--thank you for making our docs better! </p>
+<p>Once you've made your changes, commit, pull, merge, push, and <a href="https://help.github.com/articles/using-pull-requests">send us a pull request</a>! We--and FiddlerCore users everywhere--thank you for making our docs better! </p>
 </li>
 </ul></article>

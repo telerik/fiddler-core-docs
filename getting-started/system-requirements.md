@@ -6,7 +6,7 @@ position: 1
 
 # System Requirements
 
-In order to develop applications with **Telerik FiddlerCore Embedded Engine** you need to have the following development tools installed:
+In order to develop applications with **Telerik FiddlerCore** you need to have the following development tools installed:
 
 ## FiddlerCore for .NET Framework 4.0
 

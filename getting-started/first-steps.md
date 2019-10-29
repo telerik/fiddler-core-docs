@@ -8,25 +8,18 @@ position: 0
 
 # First Steps
 
-This article explains everything you need to know about FiddlerCore Embedded Engine before you start.
+This article explains everything you need to know about FiddlerCore before you start.
 
 ## System Requirements
 
-You can check the requirements for FiddlerCore Embedded Engine suite in the [System Requirements]({%slug system-requirements%}) help article.
+You can check the requirements for FiddlerCore suite in the [System Requirements]({%slug system-requirements%}) help article.
 
-## Download FiddlerCore Embedded Engine
+## Download FiddlerCore
 
 See how to download the library in the following help articles:
 
 * [Download Product Files]({%slug download-product-files%})
 * [Use Telerik NuGet Server]({%slug telerik-nuget-server%})
-
-## Getting Started with FiddlerCore Embedded Engine
-
-See how to get started with the library in the following articles: 
-
-* [Getting started on Windows]({%slug get-started-windows%})
-* [Getting started on Mac]({%slug get-started-mac%})
 
 ## Next Steps
 

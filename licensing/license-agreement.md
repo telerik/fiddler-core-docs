@@ -1,7 +1,7 @@
 ---
 title: License Agreement
 page_title: License Agreement
-description: Telerik FiddlerCore Embedded Engine License Agreement
+description: Telerik FiddlerCore License Agreement
 slug: license-agreement
 tags: license-agreement
 published: True
@@ -10,6 +10,6 @@ position: 1
 
 # License Agreement
 
-End User License Agreement for Progress Telerik FiddlerCore Embedded Engine can be found on the following pages:
+End User License Agreement for Progress Telerik FiddlerCore can be found on the following pages:
 
-* [https://www.telerik.com/purchase/license-agreement/fiddlercore](https://www.telerik.com/purchase/license-agreement/fiddlercore) for the internal version of FiddlerCore Embedded Engine, including Trial License.
+* [https://www.telerik.com/purchase/license-agreement/fiddlercore](https://www.telerik.com/purchase/license-agreement/fiddlercore) for the internal version of FiddlerCore, including Trial License.
