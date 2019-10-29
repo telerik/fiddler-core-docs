@@ -13,7 +13,7 @@ blockquote {
   min-height: 70px;
   padding: 24px 80px;
   background-color: #f9edc6;
-  background-image: url("/devtools/justmock/assets/important-icon.svg");
+  background-image: url("/fiddler-core/assets/important-icon.svg");
   color: #fff;
   background-repeat: no-repeat;
   background-size: 48px;
@@ -47,13 +47,13 @@ blockquote {
     color: #4f5d6c; }
   blockquote.important {
     background-color: #f9edc6;
-    background-image: url("/devtools/justmock/assets/important-icon.svg"); }
+    background-image: url("/fiddler-core/assets/important-icon.svg"); }
   blockquote.caution {
     background-color: #f7e1df;
-    background-image: url("/devtools/justmock/assets/caution-icon.svg"); }
+    background-image: url("/fiddler-core/assets/caution-icon.svg"); }
   blockquote.tip {
     background-color: #e4f1df;
-    background-image: url("/devtools/justmock/assets/tip-icon.svg"); }
+    background-image: url("/fiddler-core/assets/tip-icon.svg"); }
 
 
 article:not(.api-reference)>p:first-child, article:not(.api-reference) h1+p {
@@ -82,15 +82,11 @@ article:not(.api-reference)>p:first-child, article:not(.api-reference) h1+p {
 
 </style>
 
-# Telerik JustMock API Reference
-The API reference section of the documentation contains a list and descriptions of all public available classes, methods and properties of the Telerik JustMock product.
+# Telerik FiddlerCore API Reference
+The API reference section of the documentation contains a list and descriptions of all public available classes, methods and properties of the Telerik FiddlerCore product.
 
 ## Namespaces
 
 | Namespaces | Description |
 | -----------| ----------- |
-| [Telerik.JustMock](http://docs.telerik.com/devtools/justmock/api/Telerik.JustMock) | In: *Telerik.JustMock.dll* <br/> This namespace must be included to any JustMock test project. |
-| [Telerik.JustMock.AutoMock](http://docs.telerik.com/devtools/justmock/api/Telerik.JustMock.AutoMock) | In: *Telerik.JustMock.dll* <br/> This namespace must be included to use AutoMock. |
-| [Telerik.JustMock.Helpers](http://docs.telerik.com/devtools/justmock/api/Telerik.JustMock.Helpers) | In: *Telerik.JustMock.dll* <br/> This namespace must be included in any JustMock test project using fluent syntaxt for its tests.Also contains helpers methods. |
-| [Telerik.JustMock.Setup](http://docs.telerik.com/devtools/justmock/api/Telerik.JustMock.Setup) | In: *Telerik.JustMock.dll* <br/> This namespace is used for configuring the JustMocks behavior. |
-| [Telerik.JustMock.Trial](http://docs.telerik.com/devtools/justmock/api/Telerik.JustMock.Trial) | In: *Telerik.JustMock.dll*
+| [Fiddler](http://docs.telerik.com/fiddler-core/api/fiddler) | In: *Fiddler.dll* <br/> This namespace must be included to any JustMock test project. |

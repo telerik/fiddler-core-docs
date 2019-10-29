@@ -1,7 +1,7 @@
 apiRules:
 - exclude:
-    uidRegex: ^Org.BouncyCastle\.
+    uidRegex: ^Org\.BouncyCastle\.
 - exclude:
     uidRegex: ^SmartAssembly\.
 - exclude:
-    uidRegex: ^FiddlerCore.Utilities.SmartAssembly\.
+    uidRegex: ^FiddlerCore\.Utilities\.SmartAssembly\.
