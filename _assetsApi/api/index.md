@@ -89,8 +89,8 @@ The API reference section of the documentation contains a list and descriptions 
 
 | Namespaces | Description |
 | -----------| ----------- |
-| [Fiddler](/api/fiddler) | In: *Fiddler.dll* <br/> This namespace must be included to any FiddlerCore project. |
 | [BCCertMaker](/api/bccertmaker) | In: *BasicFormats.dll* |
 | [BasicFormats](/api/basicformats) | In: *BasicFormats.dll* |
+| [Fiddler](/api/fiddler) | In: *Fiddler.dll* <br/> This namespace must be included to any FiddlerCore project. |
 | [Fiddler.WebFormats](/api/fiddler.webformats) | In: *Fiddler.dll* |
 | [Telerik.NetworkConnections](/api/telerik.networkconnections) | In: *Telerik.NetworkConnections.dll* |
