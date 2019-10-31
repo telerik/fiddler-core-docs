@@ -13,4 +13,4 @@ This article explains how to configure FiddlerCore.
 ## Next Steps
 
 - [Register as System Proxy]({%slug register-as-system-proxy %})
-
+- [Use Custom Root Certificate]({%slug use-custom-root-certificate %})

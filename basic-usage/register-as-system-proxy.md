@@ -12,5 +12,5 @@ This article explains how to register FiddlerCore as system proxy.
 
 ## Next Steps
 
-- [Trust Root Certificate]({%slug trust-root-certificate %})
+- [Capture HTTP/S Traffic]({%slug capture-https-traffic %})
 
