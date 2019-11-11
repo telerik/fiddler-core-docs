@@ -36,22 +36,20 @@ In this example, the MakeCert.dll is used with the ICertificateProvider5 Interfa
 ``` csharp
 	private static void EnsureRootCertificate()
 	{
-		string certMakerPath = Path.Combine(assemblyDirectory, "lib", "CertMaker.dll");
-		FiddlerApplication.Prefs.SetStringPref("fiddler.certmaker.assembly", certMakerPath);
-		CertMaker.EnsureReady();
-		ICertificateProvider5 certificateProvider = (ICertificateProvider5)CertMaker.oCertProvider;
+		BCCertMaker.BCCertMaker certProvider = new BCCertMaker.BCCertMaker();
+		CertMaker.oCertProvider = certProvider;
 
+		// On first run generate root certificate using the loaded provider, then re-use it for subsequent runs.
 		string rootCertificatePath = Path.Combine(assemblyDirectory, "..", "..", "RootCertificate.p12");
 		string rootCertificatePassword = "S0m3T0pS3cr3tP4ssw0rd";
-
-		if (File.Exists(rootCertificatePath))
+		if (!File.Exists(rootCertificatePath))
 		{
-			certificateProvider.ReadRootCertificateAndPrivateKeyFromPkcs12File(rootCertificatePath, rootCertificatePassword);
+			certProvider.CreateRootCertificate();
+			certProvider.WriteRootCertificateAndPrivateKeyToPkcs12File(rootCertificatePath, rootCertificatePassword);
 		}
 		else
 		{
-			certificateProvider.CreateRootCertificate();
-			certificateProvider.WriteRootCertificateAndPrivateKeyToPkcs12File(rootCertificatePath, rootCertificatePassword);
+			certProvider.ReadRootCertificateAndPrivateKeyFromPkcs12File(rootCertificatePath, rootCertificatePassword);
 		}
 
 		if (!CertMaker.rootCertIsTrusted())
