@@ -8,9 +8,10 @@ position: 3
 
 # Use Custom Root Certificate
 
-This article explains how to generate and trust FiddlerCore your own root certificate.
+This article explains how to generate and trust your own root certificate.
 
-By default, when you use the FiddlerCoreStartupSettingsBuilder.DecryptSSL() setting, FiddlerCore will create new certificate every time the application runs. This example shows how to change this behavior.
+By default, when you use the `FiddlerCoreStartupSettingsBuilder.DecryptSSL()` setting, 
+FiddlerCore will create new certificate every time the application runs. This example shows how to change this behavior.
 
 ## Set the Default Certificate Provider
 

@@ -10,7 +10,7 @@ position: 3
 
 This article expains how to capture HTTP/S traffic with FiddlerCore
 
-Once FiddlerCore is [configured]({%slug configuration %}), it starts to listen for a traffic on the background. When it captures any session, it notifies you by firing the following events:
+Once FiddlerCore is [configured]({%slug configuration %}), it starts to listen for a traffic on the background. When it captures any session, it notifies you by raising the following events:
 
 >It is important to understand that FiddlerCore calls event handlers on session-handling background threads.
 
