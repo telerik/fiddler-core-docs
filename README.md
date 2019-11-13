@@ -1,7 +1,7 @@
 <h1>
 <a name="fiddler-core-public-documentation" class="anchor" href="#fiddler-core-public-documentation"><span class="mini-icon mini-icon-link"></span></a>FiddlerCore Public Documentation</h1>
 
-<p>Welcome to the GitHub repo for <a href="http://www.telerik.com/fiddler/fiddlercore">FiddlerCore</a> <a href="https://docs.telerik.com/fiddler-core">Documentation</a>. This repository contains the source content--written in Markdown--that we use to power the FiddlerCore. 
+<p>Welcome to the GitHub repo for <a href="http://www.telerik.com/fiddler/fiddlercore">FiddlerCore</a> <a href="https://docs.telerik.com/fiddler-core">Documentation</a>. This repository contains the source content--written in Markdown--that we use to power the FiddlerCore documentation. 
 
 <p>We believe that the documentation for a product is at its best when the content is a collaboration between the builders and consumers of that product. As such, this documentation is both public, and open sourced. That means you can clone this repository, read the docs off line, or even load the entire thing to an Apple Newton, if that's your thing.</p>
 
