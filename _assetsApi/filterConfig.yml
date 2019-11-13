@@ -1,5 +1,7 @@
 apiRules:
 - exclude:
+    uidRegex: ^BCCertMaker
+- exclude:
     uidRegex: ^Org\.BouncyCastle\.
 - exclude:
     uidRegex: ^SmartAssembly\.
