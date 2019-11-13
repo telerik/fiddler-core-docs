@@ -12,7 +12,7 @@ This article explains how to capture HTTP/S traffic with FiddlerCore
 
 Once FiddlerCore is [configured]({%slug configuration %}), it starts to listen for a traffic on the background. When it captures any session, it notifies you by raising the following events:
 
->The following event handlers are invoked on session-handling **background threads**. 
+>tip The following event handlers are invoked on session-handling **background threads**. 
 >
 >If you need to need to update a UI thread (e.g. in WPF or Windows Forms application), you may need to delegate the update logic back to the UI thread, for example by using [Dispatcher.BeginInvoke](https://docs.microsoft.com/en-us/dotnet/api/system.windows.threading.dispatcher.begininvoke) (WPF) or [Control.Invoke](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.invoke) (Windows Forms).
 >

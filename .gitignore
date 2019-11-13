@@ -1,9 +1,12 @@
+
 .bundle
 .dockerignore
 .DS_Store
 .editorconfig
 .jekyll-metadata
 .ruby-version
+.suo
+.vs
 /.asset-cache/
 /_assets/
 /_build/
@@ -37,5 +40,3 @@ search.html
 start-docs.sh
 start-docs-sl.sh
 watch.sh
-.suo
-.vs

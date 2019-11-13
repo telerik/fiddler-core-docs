@@ -55,7 +55,8 @@ The following default implementations for `INetworkConnectionsDetector` are prov
 - `RasNetworkConnectionsDetector`: detector for Windows-specific RAS network connections.
 - `MacNetworkConnectionsDetector`: Detector for Mac-specific network connections.
 - `LinuxNetworkConnectionsDetector`: Detector for Linux-specific network connections.
->noteThe built-in connection detectors are OS-specific and will throw exception if invoked on a not-supported platforms.
+
+>noteThe built-in connection detectors are OS-specific and will throw exception if invoked on not supported platforms.
 
 ## Next Steps
 
