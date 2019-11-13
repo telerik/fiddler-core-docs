@@ -89,8 +89,8 @@ The API reference section of the documentation contains a list and descriptions 
 
 | Namespaces | Description |
 | -----------| ----------- |
-| [Fiddler](/api/fiddler) | In: *FiddlerCore.dll* <br/> This namespace must be included to any FiddlerCore project. |
-| [Telerik.NetworkConnections](/api/telerik.networkconnections) | In: *Telerik.NetworkConnections.dll* |
-| [Telerik.NetworkConnections.Windows](/api/telerik.networkconnections.windows) | In: *Telerik.NetworkConnections.dll* |
-| [Telerik.NetworkConnections.Linux](/api/telerik.networkconnections.linux) | In: *Telerik.NetworkConnections.dll* |
-| [Telerik.NetworkConnections.Mac](/api/telerik.networkconnections.mac) | In: *Telerik.NetworkConnections.dll* |
+| [Fiddler](/fiddler-core/api/fiddler) | In: *FiddlerCore.dll* <br/> This namespace must be included to any FiddlerCore project. |
+| [Telerik.NetworkConnections](/fiddler-core/api/telerik.networkconnections) | In: *Telerik.NetworkConnections.dll* |
+| [Telerik.NetworkConnections.Windows](/fiddler-core/api/telerik.networkconnections.windows) | In: *Telerik.NetworkConnections.dll* |
+| [Telerik.NetworkConnections.Linux](/fiddler-core/api/telerik.networkconnections.linux) | In: *Telerik.NetworkConnections.dll* |
+| [Telerik.NetworkConnections.Mac](/fiddler-core/api/telerik.networkconnections.mac) | In: *Telerik.NetworkConnections.dll* |
