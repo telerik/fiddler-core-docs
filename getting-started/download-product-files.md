@@ -21,7 +21,7 @@ In order to download these you need to take the following steps:
 
 ![](images/download_product_files_1.png)
 
-**3. Select __Telerik UI for Xamarin__ product title:**
+**3. Select __FiddlerCore__ product title:**
 
 ![](images/download_product_files_2.png)
 

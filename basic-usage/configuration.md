@@ -86,6 +86,14 @@ FiddlerApplication.Prefs.SetStringPref("fiddler.proxy.pacfile.text", "return 'PR
 - `DecryptSSL()`:  Enables decryption of HTTPS traffic. You should have a CertificateProvider loaded with trusted certificate. For more details see [Use Custom Root Certificate]({%slug use-custom-root-certificate %}) article.
 - `OptimizeThreadPool()`: Optimizes the thread pool to better handle multiple simultaneous threads. This is often convenient, as each `Session` is handled in a different thread. Under the hood, this methods uses [`ThreadPool.SetMinThreads`](https://docs.microsoft.com/en-us/dotnet/api/system.threading.threadpool.setminthreads) with a value larger that the default one.
 
+## Handling events
+`FiddlerApplication` exposes numerous events, described in more details in the [Capture HTTP/S Traffic] article (%slug capture-https-traffic) article.
+
+## Shutdown
+`FidlerCore can be shut down using the following method of `FiddlerApplication`
+- `Shutdown()`: Shuts down FiddlerCore, and reverts the proxy settings to the original ones, in case they were modified on startup.
+>noteIf there is traffic in progress when calling `FiddlerApplication.Shutdown()`, some of the background threads handling the sessions may throw `ObjectDisposedException` or `NullReferenceException`. 
+
 ## Next Steps
 
 - [Register as System Proxy]({%slug register-as-system-proxy %})
