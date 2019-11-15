@@ -14,7 +14,7 @@ Once FiddlerCore is [configured]({%slug configuration %}), it starts to listen f
 
 >tip The following event handlers are invoked on session-handling **background threads**. 
 >
->If you need to need to update a UI thread (e.g. in WPF or Windows Forms application), you may need to delegate the update logic back to the UI thread, for example by using [Dispatcher.BeginInvoke](https://docs.microsoft.com/en-us/dotnet/api/system.windows.threading.dispatcher.begininvoke) (WPF) or [Control.Invoke](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.invoke) (Windows Forms).
+>If you need to update a UI thread (e.g. in WPF or Windows Forms application), you may need to delegate the update logic back to the UI thread, for example by using [Dispatcher.BeginInvoke](https://docs.microsoft.com/en-us/dotnet/api/system.windows.threading.dispatcher.begininvoke) (WPF) or [Control.Invoke](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.invoke) (Windows Forms).
 >
 >Also, if you use collections that are not thread-safe, like [`List<T>`](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1), you may need to employ additional synchronization mechanisms.
 
