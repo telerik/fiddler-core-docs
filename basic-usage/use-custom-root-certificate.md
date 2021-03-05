@@ -3,7 +3,7 @@ title: Use Custom Root Certificate
 slug: use-custom-root-certificate
 tags: use-custom-root-certificate
 published: True
-position: 3
+position: 40
 ---
 
 # Use Custom Root Certificate

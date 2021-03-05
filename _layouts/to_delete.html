@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<!-- We use hash/version cachebusting (with parameter *.js/*.css?HASH) in order
+to be able to define js scripts as async or defer. Since the jekyll doesn't output the assets
+in this case, this file is necessary as a workaround.  -->
+{% javascript jquery %}
+{% javascript bootstrap.min %}
+{% javascript main %}
+{% javascript feedback %}
+{% javascript kinvey %}
+{% javascript kendo %}
+{% javascript knowledge-base %}
+{% javascript search-popup %}
+{% javascript sdk-browser %}
+{% javascript search-results %}
+{% javascript tabstrip %}
+{% javascript announcement %}
+{% if site.main_theme %}{% stylesheet "bundle-{{ site.main_theme }}" %}{% else %}{% stylesheet "bundle" %}{% endif %}
+{% if site.enable_dojo == true %}{% javascript dojo %}{% stylesheet "dojo" %}{% endif %}
+{% if site.has_web_api == true or site.has_web_api_index == true %}
+  {% javascript api %}{% stylesheet "api" %}
+  {% stylesheet "api-toc" %}{% javascript "api-toc" %}
+{% endif %}
+{% if site.platforms.size > 0 %} {% stylesheet "platform_styles" %} {% endif %}
+{% stylesheet icon-font %}
+{% stylesheet telerik-web-ui-font %}
+{% stylesheet sdk-browser %}

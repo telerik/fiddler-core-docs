@@ -3,7 +3,7 @@ title: Configuration
 slug: configuration
 tags: configuration
 published: True
-position: 0
+position: 10
 ---
 
 # Configuration

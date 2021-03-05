@@ -1,0 +1,115 @@
+"Telerik UI for ASP.NET AJAX":
+  message: "professional grade UI library with 120+ components for building modern and feature-rich applications."
+  trial_url: "https://www.telerik.com/download-trial-file/v2-b/ui-for-asp.net-ajax"
+  product_url: "https://www.telerik.com/products/aspnet-ajax.aspx"
+  avatar: "Ninja"
+  overview_regex: (^controls\/)[^\/]*\/overview\.md$
+"Telerik UI for Blazor":
+  message: "professional grade UI library with 70+ native components for building modern and feature-rich applications."
+  trial_url: "https://www.telerik.com/download-trial-file/v2/ui-for-blazor"
+  product_url: "https://www.telerik.com/blazor-ui"
+  avatar: "Ninja"
+  overview_regex: '(^components\/)[^\/]*\/overview\.md$'
+  component_suffix: " component"
+"Telerik UI for WPF":
+  message: "professional grade UI library with 140+ components for building modern and feature-rich applications."
+  trial_url: "https://www.telerik.com/download-trial-file/v2-b/ui-for-wpf"
+  product_url: "https://www.telerik.com/products/wpf/overview.aspx"
+  avatar: "Ninja"
+"Telerik UI for Silverlight":
+  message: "professional grade UI library with 100+ components for building modern and feature-rich applications."
+  trial_url: "https://www.telerik.com/download-trial-file/v2-b/ui-for-silverlight"
+  product_url: "https://www.telerik.com/products/silverlight/overview.aspx"
+  avatar: "Ninja"
+"Telerik UI for WinForms":
+  message: "professional grade UI library with 140+ components for building modern and feature-rich applications."
+  trial_url: "https://www.telerik.com/download-trial-file/v2-b/ui-for-winforms"
+  product_url: "https://www.telerik.com/products/winforms.aspx"
+  avatar: "Ninja"
+"Telerik UI for WinUI":
+  message: "professional grade UI component library for building modern and feature-rich applications."
+  trial_url: "https://www.telerik.com/download-trial-file/v2-b/ui-for-winui"
+  product_url: "https://www.telerik.com/winui"
+  avatar: "Ninja"
+  overview_regex: '(^controls\/)[^\/]*\/[^\/]*overview\.md$'
+"Telerik Reporting":
+  message: "complete .NET embedded reporting tool for web and desktop applications."
+  trial_url: "https://www.telerik.com/download-trial-file/v2-b/reporting"
+  product_url: "https://www.telerik.com/products/reporting.aspx"
+  avatar: "Ninja"
+"Telerik Report Server":
+  message: "end-to-end report management solution to store, create, manage and view reports in web and desktop applications."
+  trial_url: "https://www.telerik.com/download-trial-file/v2-b/report-server"
+  product_url: "https://www.telerik.com/report-server"
+  avatar: "Ninja"
+"Telerik UI for Universal Windows Platform":
+  message: "professional grade UI component library for building modern and feature-rich applications."
+  trial_url: "https://www.telerik.com/download-trial-file/v2-b/ui-for-universal-windows-platform"
+  product_url: "https://www.telerik.com/universal-windows-platform-ui"
+  avatar: "Ninja"
+"Telerik UI for Xamarin":
+  message: "professional grade UI component library for building modern and feature-rich applications."
+  trial_url: "https://www.telerik.com/download-trial-file/v2-b/ui-for-xamarin"
+  product_url: "https://www.telerik.com/xamarin-ui"
+  avatar: "Ninja"
+  overview_regex: '(^controls\/|^blazormobilecontrols\/|^nativecontrols\/).*overview\.md$'
+"Kendo UI for jQuery":
+  message: "professional grade UI library with 90+ components for building modern and feature-rich applications."
+  trial_url: "https://www.telerik.com/download-login-v2-kendoui/thank-you-for-downloading"
+  product_url: "https://www.telerik.com/kendo-jquery-ui"
+  avatar: "Kendoka"
+  overview_regex: '(jsp\/tags\/|php\/widgets\/|controls\/|framework\/).*\/overview\.md$'
+"Telerik UI for ASP.NET Core":
+  message: "professional grade UI library with 100+ components for building modern and feature-rich applications."
+  trial_url: "https://www.telerik.com/download-trial-file/v2/aspnet-core-ui"
+  product_url: "https://www.telerik.com/aspnet-core-ui"
+  avatar: "Ninja"
+  overview_regex: '(^tag-helpers\/|^html-helpers\/).*\/overview\.md$'
+"Telerik UI for ASP.NET MVC":
+  message: "professional grade UI library with 100+ components for building modern and feature-rich applications."
+  trial_url: "https://www.telerik.com/download-trial-file/v2-b/ui-for-asp.net-mvc"
+  product_url: "https://www.telerik.com/aspnet-mvc"
+  avatar: "Ninja"
+  overview_regex: '(^html-helpers\/).*\/overview\.md$'
+"Telerik UI for JSP":
+  message: "professional grade UI library with 90+ components for building modern and feature-rich applications."
+  trial_url: "https://www.telerik.com/download-trial-file/v2/ui-for-jsp"
+  product_url: "http://www.telerik.com/jsp-ui"
+  avatar: "DevCraft"
+"Telerik UI for PHP":
+  message: "professional grade UI library with 90+ components for building modern and feature-rich applications."
+  trial_url: "https://www.telerik.com/download-trial-file/v2/ui-for-php"
+  product_url: "https://www.telerik.com/php-ui"
+  avatar: "DevCraft"
+"Telerik Document Processing":
+  message: "professional grade .NET library for creating and manipulating PDF, Word, XLSX and HTML files."
+  trial_url: "https://www.telerik.com/download-trial-file/v2-b/devcraft-ultimate"
+  product_url: "https://www.telerik.com/document-processing-libraries"
+  avatar: "Ninja"
+  overview_regex: '(^libraries\/).*\/overview\.md$'
+"Telerik JustMock":
+  message: "professional grade mocking library that help you easily craft unit tests even for complex scenarios by isolating dependencies."
+  trial_url: "https://www.telerik.com/download-trial-file/v2-b/justmock"
+  product_url: "https://www.telerik.com/products/mocking.aspx"
+  avatar: "Ninja"
+"Progress Test Studio":
+  trial_url: "https://www.telerik.com/download-trial-file/v2-b/test-studio-ultimate"
+  product_url: "https://www.telerik.com/teststudio"
+"Progress Telerik TestStudio Dev":
+  trial_url: "https://www.telerik.com/download-trial-file/v2-b/test-studio-dev-edition"
+  product_url: "https://www.telerik.com/teststudio-dev"
+"Progress Telerik Test Studio for APIs":
+  trial_url: "https://www.telerik.com/download-trial-file/v2/teststudio-apis"
+  product_url: "https://www.telerik.com/teststudio-apis"
+product_map:
+  "kendo-ui": "Kendo UI for jQuery"
+  "jsp-ui": "Telerik UI for JSP"
+  "php-ui": "Telerik UI for PHP"
+  "aspnet-mvc": "Telerik UI for ASP.NET MVC"
+  "aspnet-core": "Telerik UI for ASP.NET Core"
+  "xamarin-ui": "Telerik UI for Xamarin"
+  "blazor": "Telerik UI for Blazor"
+  "reporting": "Telerik Reporting"
+  "justmock": "Telerik JustMock"
+  "report-server": "Telerik Report Server"
+  "teststudiodev": "Progress Telerik TestStudio Dev"

@@ -1,0 +1,36 @@
+{% assign product = site.product %}
+{% if page.product != blank %}
+{% assign product = site.data.cta_panels_data.product_map[page.product] %}
+{% endif %}
+{% assign message = site.data.cta_panels_data[product].message %}
+{% assign product_url = site.data.cta_panels_data[product].product_url %}
+{% assign trial_url = site.data.cta_panels_data[product].trial_url %}
+{% assign icon = site.data.cta_panels_data[product].avatar %}
+{% assign component_suffix = site.data.cta_panels_data[product].component_suffix %}
+
+<section class="kd-cta-panel">
+    <div class="container flex-center">
+        <div class="kd-cta kd-cta-lg kd-cta-full-width">
+            <div class="kd-cta-content-wrapper">
+                <div class="kd-cta-image">
+                    <img loading="lazy" src="{{ site.baseurl }}/assets/Avatar-{{ icon }}-big.svg"
+                        alt="{{ product }} {{ icon }} image">
+                </div>
+                <div class="kd-cta-title-desc">
+                    <div class="kd-cta-desc">
+                        <p class="text-small m-0">
+                          The {{ page.CTAControlName }}{{component_suffix}} is part of <a
+                                href="{{ product_url }}"
+                                class="kd-link text-bold">{{ product }}</a>, a 
+                            {{ message }} To try it out sign up for a free 30-day trial.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="kd-cta-button-wrapper">
+                <a href="{{ trial_url }}"
+                    class="kd-button kd-button-primary kd-button-md">Download Free Trial</a>
+            </div>
+        </div>
+    </div>
+</section>

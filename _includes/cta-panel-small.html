@@ -1,0 +1,15 @@
+{% assign product = site.product %}
+{% if page.product != blank %}
+{% assign product = site.data.cta_panels_data.product_map[page.product] %}
+{% endif %}
+
+<section class="kd-cta-panel cta-small">
+    <div>
+        <div class="kd-cta kd-cta-sm">
+            <p class="kd-text">
+                New to <span class="js-product">{{ product }}</span>?
+                <a class="kd-link" href="{{ site.data.cta_panels_data[product].trial_url }}">Download free 30-day trial</a>
+            </p>
+        </div>
+    </div>
+</section>

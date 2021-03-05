@@ -1,0 +1,16 @@
+<div id="page-tree">
+</div>
+
+{% if site.api_reference_url %}
+<div id="page-tree-api" class="k-treeview">
+  <ul class="k-group">
+    <li class="k-item">
+      <div class="k-mid">
+        <span class="k-in">
+          <a href="{{site.baseurl}}/{{ site.api_reference_url}}" target="_blank">API Reference</a>
+        </span>
+      </div>
+    </li>
+  </ul>
+</div>	
+{% endif %}

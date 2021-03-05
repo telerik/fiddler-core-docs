@@ -1,0 +1,28 @@
+<script>
+  var kinveyAppKey = {% if site.environment == 'test' or site.environment == 'dev' %} "kid_ryLIO7OtI" {% else %} "kid_Hk57KwIFf" {% endif %};
+  var hasDataLang = {% if site.code_lang == true %} true {% else %} false {% endif %};
+  {% if site.has_web_api == true or site.has_web_api_index == true %}
+  {% if page.kind == 'api'%}
+  var isMainApiPage = {% if page.is_main or page.has_api_toc %} true {% else %} false {% endif %};
+  var hasWebApiData = {% if site.has_web_api == true %} true {% else %} false {% endif %};
+  {% endif %}
+  {% endif %}
+  {% if site.api_columns_count %}var apiColumnsCount = {{ site.api_columns_count }};{% endif %}
+  var assetsFolderPath = '{{site.baseurl}}/assets';
+  var mainSdkExamples = {{ site.sdk_examples | prepend: '"' | append: '"' }};
+  var sdkRepoPath = {{ site.sdk_repo_path | prepend: '"' | append: '"' }};
+  var sdkCdnRepoPath = {{ site.sdk_cdn_path | prepend: '"' | append: '"' }};
+  var navigationPath = "{{site.baseurl}}/{{page.category}}.json";
+  var navigationItemToExpand = "{{page.url | remove_first: '/' }}";
+  var navigationTemplatePath = "{{site.baseurl}}/";
+  var gcsInstance = '{{site.gcs_engine}}';
+  var gcsKey = '{{site.gcs_api_key}}';
+  var isKbPortalRoot = false;
+  var showSearchPopup = true;
+  var isKbPage = {% if page.res_type == 'kb' %} true {% else %} false {% endif %};
+  var siteHasKbPortal = {% if site.has_kb_portal == true %} true {% else %} false {% endif %};
+  var hasApiReference = {% if site.has_api_reference != false %} true {% else %} false {% endif %};
+  var prd = '{{ site.product }}';
+  var dojoEnabled = '{{ site.enable_dojo }}';
+  var kendoCdnVersion = "{{ site.cdnVersion | default: '2020.2.617' }}";
+</script>
