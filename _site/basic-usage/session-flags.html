@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Fiddler Core Session flags | Progress Telerik FiddlerCore </title>
-  <meta name="description" content="Fiddler Core providesd specific flags to control the oricessing or deiplay of the Session object." />
+  <title>FiddlerCore Session flags | Progress Telerik FiddlerCore </title>
+  <meta name="description" content="FiddlerCore provides set of specific flags to control the processing or display of the Session object" />
   <meta name="restype" content="documentation">
   
   <script type="application/ld+json">
@@ -17,7 +17,7 @@
         "@type": "WebPage",
         "@id": "https://docs.telerik.com/fiddler-core/basic-usage/session-flags"
       },
-      "headline": "Fiddler Core Session flags | Progress Telerik FiddlerCore ",
+      "headline": "FiddlerCore Session flags | Progress Telerik FiddlerCore ",
       "author":{
       "@type":"Organization",
       "name":"Telerik"},
@@ -36,7 +36,7 @@
           "url": "https://telerik-media.s3.amazonaws.com/assets/progress-telerik-logo-black.png"
         }
       },
-      "description": "Fiddler Core providesd specific flags to control the oricessing or deiplay of the Session object.",
+      "description": "FiddlerCore provides set of specific flags to control the processing or display of the Session object",
       "about": "Progress Telerik FiddlerCore",
       "isPartOf": "https://docs.telerik.com/fiddler-core"
     }
@@ -53,10 +53,10 @@
   <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
   
   
-  <link rel="stylesheet" type="text/css" href="/fiddler-core/assets/bundle.css?551801000">
+  <link rel="stylesheet" type="text/css" href="/fiddler-core/assets/bundle.css?633871800">
   
   <link rel="preload" href="/fiddler-core/assets/WebComponentsIcons.woff" as="font" type="font/woff" crossorigin>
-  <link rel="stylesheet" type="text/css" href="/fiddler-core/assets/icon-font.css?551801000" media="print" onload="this.media='all'">
+  <link rel="stylesheet" type="text/css" href="/fiddler-core/assets/icon-font.css?633871800" media="print" onload="this.media='all'">
   
   
   
@@ -212,6 +212,70 @@
 <li>While you can call <strong>oFlags.Add("flagname")</strong>, this will throw an exception if the flag already exists.  It's better to just set the value: <strong>oFlags["flagname"] = "value";</strong>
 </li>
 <li>You can create new flags that attach metadata to a given session. To avoid naming conflicts, it's recommended that you choose distinctive flagnames. For example: <strong>addon.acme.loggingFlag</strong>.</li>
+</ul>
+
+<h2 id="host-flags"><a href="#host-flags">Host Flags</a></h2>
+
+<ul>
+<li>
+<strong>x-overrideHost</strong> - Provide the <em>Host:Port</em> combination, which should be used for DNS resolution purposes. Note that this mechanism does not change the HOST header on the request and thus is not useful if there's an upstream gateway.</li>
+<li>
+<strong>x-hostIP</strong> - Indicates the IP address of the server used for this request. <strong>Read-only</strong> flag.</li>
+<li>
+<strong>x-overrideGateway</strong> - Provide the Host:Port combination of a gateway that should be used to proxy this request, or DIRECT to send the request directly to the origin server.</li>
+<li>
+<strong>x-ConnectResponseRemoveConnectionClose</strong> - Use during the <strong>FiddlerApplication.RequestHeadersAvailable</strong> or <strong>FiddlerApplication.BeforeRequest</strong> event, so that when FiddlerCore responds to the client's CONNECT request with <em>"200 Connection established"</em>, it will not add the <em>"Connection: close"</em> header. This header is known to be controversial for the CONNECT response, and it causes problems with some clients.</li>
+</ul>
+
+<h2 id="client-flags"><a href="#client-flags">Client Flags</a></h2>
+
+<ul>
+<li>
+<strong>x-ProcessInfo</strong> - Information (module name and ProcessID) on source of local requests.</li>
+<li>
+<strong>x-clientIP</strong> - Indicates the client IP that sent this request.  It is most useful when multiple computers on a network are pointed to a single Fiddler instance. <strong>Read-only</strong> flag.</li>
+<li>
+<strong>x-clientport</strong> - Indicates the port on the client that sent this request. <strong>Read-only</strong> flag.</li>
+</ul>
+
+<h2 id="socket-reuse-flags"><a href="#socket-reuse-flags">Socket Reuse Flags</a></h2>
+
+<ul>
+<li>
+<strong>x-serversocket</strong> - String containing data about the reuse status of the server socket. <strong>Read-only</strong> flag.</li>
+<li>
+<strong>x-securepipe</strong> - String containing data about the reuse status of a secure server socket. <strong>Read-only</strong> flag.</li>
+</ul>
+
+<h2 id="decryption-and-authentication-flags"><a href="#decryption-and-authentication-flags">Decryption and Authentication Flags</a></h2>
+
+<ul>
+<li>
+<strong>x-no-decrypt</strong> - If set on a CONNECT tunnel, the traffic in the tunnel will not be decrypted.</li>
+<li>
+<strong>https-Client-Certificate</strong> - Filename of client certificate (e.g. .CER) that should be attached to this secure request.</li>
+<li>
+<strong>x-OverrideCertCN</strong> - String specifying the hostname that should appear in the CN field of this CONNECT tunnel's Fiddler-generated certificate.</li>
+<li>
+<strong>x-SuppressProxySupportHeader</strong> - Prevent FiddlerCore from adding a "Proxy-Support: Session-Based-Authentication" header to HTTP/401 or HTTP/407 responses that request Negotiate or NTLM authentication.</li>
+</ul>
+
+<h2 id="performance-flags"><a href="#performance-flags">Performance Flags</a></h2>
+
+<ul>
+<li>
+<strong>request-trickle delay</strong> - Milliseconds to delay each outbound kilobyte of request data.</li>
+<li>
+<strong>response-trickle-delay</strong> - Milliseconds to delay each inbound kilobyte of response data.</li>
+</ul>
+
+<h2 id="drop-sessions-flags"><a href="#drop-sessions-flags">Drop Sessions Flags</a></h2>
+
+<ul>
+<li>
+<strong>log-drop-request-body</strong> - Drop the request body from the session list after a request is sent to the server.  Helpful in reducing memory usage.</li>
+<li>
+<strong>log-drop-response-body</strong> - Drop the request body from the session list after a response is sent to the client. Helpful in reducing memory usage.</li>
 </ul> 
         </article>
 
@@ -264,10 +328,10 @@
 </div>
 
 
-<script src="/fiddler-core/assets/jquery.js?551801000" defer></script>
-<script src="/fiddler-core/assets/bootstrap.min.js?551801000" defer></script>
+<script src="/fiddler-core/assets/jquery.js?633871800" defer></script>
+<script src="/fiddler-core/assets/bootstrap.min.js?633871800" defer></script>
 
-<script src="/fiddler-core/assets/main.js?551801000" defer></script>
+<script src="/fiddler-core/assets/main.js?633871800" defer></script>
 
 
 
