@@ -1,5 +1,6 @@
 ---
-title: First Steps
+title: First Steps with FiddlerCore
+description: Get started with the FiddlerCore library
 slug: first-steps
 tags: first-steps
 published: True

@@ -1,5 +1,6 @@
 ---
 title: System Requirements
+description: FiddlerCore system requirments
 slug: system-requirements
 position: 1
 ---

@@ -1,6 +1,6 @@
 ---
-title: Fiddler Core Session flags
-description: Fiddler Core provides specific flags to control the processing or display of the Session object.
+title: FiddlerCore Session flags
+description: FiddlerCore provides set of specific flags to control the processing or display of the Session object
 slug: fiddler-core-session-flags
 tags: fiddler-core-session-flags
 published: True
