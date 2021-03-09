@@ -1,5 +1,6 @@
 ---
 title: Telerik NuGet Server
+description: Installing the latest version of FiddlerCore via the Telerik Nuget servers
 slug: telerik-nuget-server
 position: 8
 ---

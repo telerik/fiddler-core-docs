@@ -1,9 +1,10 @@
 ---
 title: Configuration
+description: Learn more about FiddlerCore start-up, proxy, handling, and shutdown settings
 slug: configuration
 tags: configuration
 published: True
-position: 0
+position: 10
 ---
 
 # Configuration

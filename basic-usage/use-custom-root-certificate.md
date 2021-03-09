@@ -1,9 +1,10 @@
 ---
 title: Use Custom Root Certificate
+description: Create, read and trust root certificate with BouncyCastle in FiddlerCore
 slug: use-custom-root-certificate
 tags: use-custom-root-certificate
 published: True
-position: 3
+position: 40
 ---
 
 # Use Custom Root Certificate

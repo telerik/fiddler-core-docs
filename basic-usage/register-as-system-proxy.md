@@ -1,9 +1,10 @@
 ---
 title: Register as System Proxy
+description: Learn how to set FiddlerCore as the system proxy
 slug: register-as-system-proxy
 tags: register
 published: True
-position: 1
+position: 20
 ---
 
 # Register as System Proxy
