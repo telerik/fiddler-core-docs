@@ -30,9 +30,11 @@ private static void FiddlerApplication_ResponseHeadersAvailable(Session oSession
 
     if (oSession.fullUrl.Contains("example.com"))
     {
-        // Set this to true, so in BeforeResponse, you'll be able to modify the body.
-        // If the value is false (default one), the response you'll work with within the BeforeResponse handler will be just a copy. 
-        // The original one will already be streamed to the client, and all of your modifications will not be visible there.
+        /*
+        Set this to true, so in BeforeResponse, you'll be able to modify the body.
+        If the value is false (default one), the response you'll work with within the BeforeResponse handler will be just a copy. 
+        The original one will already be streamed to the client, and all of your modifications will not be visible there.
+        */
         oSession.bBufferResponse = true;
     }
 }
@@ -51,6 +53,7 @@ private static void FiddlerApplication_BeforeResponse(Session oSession)
         // Remove any compression or chunking
         oSession.utilDecodeResponse();
         var oBody = System.Text.Encoding.UTF8.GetString(oSession.responseBodyBytes);
+
         // Modify the body as you want
         oBody = "Replaced body";
 
