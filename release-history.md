@@ -20,9 +20,8 @@ position: 300
 
 **Improvments**
 - Removal of makecert.exe from FiddlerCore distributions
-- Improved the NetworkConnections API.
-- Included PDBs for the NetworkConnections assemblies in the distributions.
-- Hook using PAC script only.
-- Updated FiddlerCore EULA.
-- Updated FiddlerCore demo project.
-- Updaтеd FiddlerCore documentation #1465.
+- Improved the NetworkConnections API
+- Included PDBs for the NetworkConnections assemblies in the distributions
+- Hook using PAC script only
+- Updated FiddlerCore EULA
+- Updated FiddlerCore demo project
