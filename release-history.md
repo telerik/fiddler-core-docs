@@ -17,6 +17,7 @@ position: 300
 
 **Fixed bugs**
 - SSL handshake fails for some servers with TLS1.2 #1462
+
 **Improvments**
 - Removal of makecert.exe from FiddlerCore distributions
 - Improved the NetworkConnections API.
