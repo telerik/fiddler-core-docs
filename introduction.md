@@ -1,9 +1,9 @@
 ---
 title: Introduction
+description: FiddlerCore is MITM proxy distributed as a .NET class library that you can integrate into your .NET applications.
 slug: introduction
-tags: introduction
 publish: true
-position: 0
+position: 1
 ---
 
 # Welcome to FiddlerCore

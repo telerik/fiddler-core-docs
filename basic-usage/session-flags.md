@@ -2,7 +2,6 @@
 title: FiddlerCore Session flags
 description: FiddlerCore provides set of specific flags to control the processing of the Session object
 slug: fiddler-core-session-flags
-tags: fiddler-core-session-flags
 published: True
 position: 60
 ---
