@@ -16,7 +16,7 @@ position: 300
 ## v5.0.0 FiddlerCore
 
 **Fixed bugs**
-- SSL handshake fails for some servers with TLS1.2 #1462
+- SSL handshake fails for some servers with TLS1.2
 
 **Improvments**
 - Removal of makecert.exe from FiddlerCore distributions
