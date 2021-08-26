@@ -23,6 +23,13 @@ navigation:
         title: Licensing
         position: 200
 
+## An exprerimental property to resolve th SEO vs STA panels conflicts
+## Discussed in the folllowing issue: https://github.com/telerik/docs-seed/issues/159
+## Build only with docs-seed branch #fiddler-page-title
+page_title_product: "FiddlerCore"
+use_product_in_title: true
+
+
 ## Product title
 product: "Progress Telerik FiddlerCore"
 platform: fiddler-core
