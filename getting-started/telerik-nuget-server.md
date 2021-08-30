@@ -23,6 +23,8 @@ In the the Package Sources section users can add new sources.
 
 In the Source field users should fill in the address of the Telerik server (URL: **https://nuget.telerik.com/nuget**) and click the Update button.
 
+>tip The improved Telerik NuGet v3 is now available for beta testing at [https://nuget.telerik.com/v3/index.json](https://nuget.telerik.com/v3/index.json). The new v3 API is faster, lighter, and reduces the number of requests from NuGet clients. You are welcome to try it.
+
 ![](images/nuget-server/nuget-vs-telerik-server.png)
 
 The Telerik server is now ready to use. Users can go to their solution and open the solution package manager.
@@ -57,6 +59,8 @@ On the next dialog users will see all the available sources. Choose “*Add*” 
 ![Add Telerik NuGet server](images/getting-started-add-package-source.png "Add Telerik NuGet server")
 
 In the Add Package Source dialog users should fill in the information of the Telerik server (URL: **https://nuget.telerik.com/nuget**) as well as their private Telerik credentials. Authentication procedure is required in order to allow downloading the packs.
+
+>tip The improved Telerik NuGet v3 is now available for beta testing at [https://nuget.telerik.com/v3/index.json](https://nuget.telerik.com/v3/index.json). The new v3 API is faster, lighter, and reduces the number of requests from NuGet clients. You are welcome to try it.
 
 ![Telerik NuGet server details](images/getting-started-add-telerk-server.png "Telerik NuGet server details")
 
