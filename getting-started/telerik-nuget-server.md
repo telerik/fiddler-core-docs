@@ -23,7 +23,7 @@ In the the Package Sources section users can add new sources.
 
 In the Source field users should fill in the address of the Telerik server (URL: **https://nuget.telerik.com/v3/index.json**) and click the Update button.
 
->important The previous version of the Telerik NuGet server (**https://nuget.telerik.com/nuget**) will be deprecated soon. Update your settings to point to the new v3 API ((URL: **https://nuget.telerik.com/v3/index.json**)), which is faster, lighter, and reduces the number of requests from NuGet clients. 
+>important The previous version of the Telerik NuGet server (https://nuget.telerik.com/nuget) will be deprecated. Update your settings to point to the new v3 API (URL: **https://nuget.telerik.com/v3/index.json**), which is faster, lighter, and reduces the number of requests from NuGet clients. 
 
 ![](images/nuget-server/nuget-vs-telerik-server.png)
 
@@ -60,7 +60,7 @@ On the next dialog users will see all the available sources. Choose “*Add*” 
 
 In the Add Package Source dialog users should fill in the information of the Telerik server (URL: **https://nuget.telerik.com/v3/index.json**) as well as their private Telerik credentials. Authentication procedure is required in order to allow downloading the packs.
 
->important The previous version of the Telerik NuGet server (**https://nuget.telerik.com/nuget**) will be deprecated soon. Update your settings to point to the new v3 API ((URL: **https://nuget.telerik.com/v3/index.json**)), which is faster, lighter, and reduces the number of requests from NuGet clients. 
+>important The previous version of the Telerik NuGet server (https://nuget.telerik.com/nuget) will be deprecated. Update your settings to point to the new v3 API (URL: **https://nuget.telerik.com/v3/index.json**), which is faster, lighter, and reduces the number of requests from NuGet clients. 
 
 ![Telerik NuGet server details](images/getting-started-add-telerk-server.png "Telerik NuGet server details")
 
