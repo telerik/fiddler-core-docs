@@ -8,6 +8,11 @@ position: 300
 
 # Release History
 
+## v5.0.2 FiddlerCore
+
+**Improvments**
+- Add digital signature to the FiddlerCore NuGet package and the FiddlerCore assemblies.
+
 ## v5.0.1 FiddlerCore
 
 **Features**
