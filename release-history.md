@@ -10,7 +10,7 @@ position: 300
 
 ## v5.0.2 FiddlerCore
 
-**Improvments**
+**Improvements**
 - Add digital signature to the FiddlerCore NuGet package and the FiddlerCore assemblies.
 
 ## v5.0.1 FiddlerCore
@@ -23,7 +23,7 @@ position: 300
 **Fixed bugs**
 - SSL handshake fails for some servers with TLS1.2
 
-**Improvments**
+**Improvements**
 - Removal of makecert.exe from FiddlerCore distributions
 - Improved the NetworkConnections API
 - Included PDBs for the NetworkConnections assemblies in the distributions
