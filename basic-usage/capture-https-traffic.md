@@ -1,5 +1,5 @@
 ---
-title: Capture HTTP/S Traffic
+title: Capture HTTPS Traffic
 description: Use FiddlerCore application events to capture and analyze HTTP and HTTPS traffic
 slug: capture-https-traffic
 tags: capture-https-traffic
