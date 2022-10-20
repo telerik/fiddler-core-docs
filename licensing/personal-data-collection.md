@@ -1,3 +1,10 @@
+---
+title: Personal Data Collection
+slug: common-personal-data-collection
+tags: personaldatacollection, gdpr
+position: 4
+---
+
 # Personal Data Collection
 
 ## How personal data is used by Telerik Products

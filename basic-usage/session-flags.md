@@ -56,18 +56,7 @@ A field in each **Session** object contains flags that control the processing of
 - **https-Client-Certificate** - Filename of client certificate (e.g. .CER) that should be attached to this secure request.
 - **x-OverrideCertCN** - String specifying the hostname that should appear in the CN field of this CONNECT tunnel's Fiddler-generated certificate.
 - **x-SuppressProxySupportHeader** - Prevent FiddlerCore from adding a "Proxy-Support: Session-Based-Authentication" header to HTTP/401 or HTTP/407 responses that request Negotiate or NTLM authentication.
-- **x-AutoAuth** -  When this flag is set, Fiddler will attempt to automatically respond to HTTP/401 challenges sent by servers and HTTP/407 challenges sent by upstream proxies. This flag supports the Digest, NTLM, and Negotiate protocols. When set to **(default)**, the current logon user’s credentials will be used. Set the flag to a string in the format **username:password**to use different credentials.
-  ```CSharp
-    if (oSession.HostnameIs("server_that_requires_credentials"))
-    {
-        oSession["x-AutoAuth"] = "(default)";
-    }
 
-    if (oSession.HostnameIs("whatever_you_need"))
-    {
-        oSession["x-AutoAuth"] = "domain\\username:password";
-    }
-  ```
 
 ## Performance Flags
 

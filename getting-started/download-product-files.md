@@ -8,40 +8,36 @@ position: 2
 
 When you have an active trial or developer license, you can download the following files:
 
-* FiddlerCore NuGet package for manual installation.
-* Additional NuGet packages and extensions.
-* Old versions of the FiddlerCore engine.
+* Standalone installation
+* Assemblies for manual installation
+* NuGet packages
+* Old versions
 
-To download these, you need to take the following steps:
+In order to download these you need to take the following steps:
 
-1. Log into your [Telerik account](https://www.telerik.com/account/).
+**1. Log into your [Telerik account](https://www.telerik.com/account/).**
 
-1. Click on the **Downloads** tab:
+**2. Click on the __Downloads__ tab:**
 
-    ![](images/downloads/account-downloads-002.png)
+![](images/download_product_files_1.png)
 
-1. Select **Progress Telerik FiddlerCore Embedded Engine** product title:
+**3. Select __FiddlerCore__ product title:**
 
-    ![](images/downloads/account-downloads-003.png)
+![](images/download_product_files_2.png)
 
-1. The download page allows you to obtain the following:
+**4. The next page allows you to download the Automatic Installation msi file, DLLs and NuGet Packages.**
 
-    - An archive that contains the latest FiddlerCore NuGet package (for manual installation), the [Bouncy Castle NuGet package](https://www.telerik.com/blogs/understanding-fiddler-certificate-generators), and the [Telerik Network Connections](https://docs.telerik.com/fiddlercore/api/telerik.networkconnections.networkconnection) Nuget package. 
+![](images/download_product_files_3.png)
 
-    - Separate NuGet files for the latest FiddlerCore NuGet package (for manual installation), the [Bouncy Castle NuGet package](https://www.telerik.com/blogs/understanding-fiddler-certificate-generators), and the [Telerik Network Connections](https://docs.telerik.com/fiddlercore/api/telerik.networkconnections.networkconnection) Nuget package. 
+Below you could find a list of the available files:
 
-    - Your FiddlerCore download history.
+>[license] could be Trial or Dev depending on the license you have.
 
-    - Quick access to the FiddlerCore release notes (through the **See what's new** link).
-
-    ![](images/downloads/account-downloads-005.png)
-
+>[version] is replaced with the version the file corresponds to.
 
 ### Installation
 
-The downloaded **FiddlerCore<version>.zip** contains the required Nuget packages. [Learn more about NUPKG files and how to use them...](https://fileinfo.com/extension/nupkg).
-
->tip Apart from downloading the Nuget package and installing it manually, you have the option to install and use your licensed FiddlerCore through the [Telerik Nuget servers]({%slug telerik-nuget-server%}).
+* FiddlerCoreEmbeddedEngine[version]_[license].zip - contains the required .
 
 ## Next Steps
 
