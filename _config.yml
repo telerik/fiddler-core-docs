@@ -1,5 +1,5 @@
 # The public documentation URL, used for sitemap.xml
-url: "https://docs.telerik.com/fiddler-core"
+url: "https://docs.telerik.com/fiddlercore"
 
 # Exclude files which should not be in the output
 exclude: [README.md, Gemfile, Gemfile.lock]
@@ -35,7 +35,7 @@ product: "Progress Telerik FiddlerCore"
 platform: fiddler-core
 
 ## The application virtual path
-baseurl: /fiddler-core
+baseurl: /fiddlercore
 
 ## Assign layout and category per different paths
 defaults:
@@ -45,7 +45,7 @@ defaults:
     values:
         layout: "documentation"
         category: "default"
-        product: "fiddler-core"
+        product: "fiddlercore"
         editable: true
 
 has_kb_portal: true
@@ -66,13 +66,13 @@ footer:
 -
   title: "Getting Started"
   links:
-    "Try Now": https://www.telerik.com/download/fiddler-core
+    "Try Now": https://www.telerik.com/download/fiddlercore
 -
   title: "Community"
   links:
     "Forums": https://www.telerik.com/forums/fiddler
     "Blogs": https://www.telerik.com/blogs/tag/fiddler
-    "Feedback Portal": https://feedback.telerik.com/fiddler-core
+    "Feedback Portal": https://feedback.telerik.com/fiddlercore
   
 footer_social: 
     facebook: https://www.facebook.com/Telerik/
