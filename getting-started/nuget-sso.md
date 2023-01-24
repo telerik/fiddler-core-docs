@@ -46,20 +46,9 @@ You have the option to create a NuGet.Config file on the application level (it w
 
 - Add the Telerik NuGet server in the package source section through a custom key (in the demo case, the key is named **MyTelerikFeed**)
 
-    ```XML
-    <?xml version="1.0" encoding="utf-8"?>
-    <configuration>
-    <packageSources>
-        <clear/>
-        <add key="nuget.org" value="https://api.nuget.org/v3/index.json" protocolVersion="3" />
-        <add key="MyTelerikFeed" value="https://nuget.telerik.com/v3/index.json" protocolVersion="3"/>
-    </packageSources>
-    <!-- more options follow here -->
-    </configuration>
-    ```
-
 - Add the generated Telerik NuGet key through the **packageSourceCredentials** section by adding a **Username** key with the value **api-key** and a **ClearTextPassword** key with the value of the generated Telerik NuGet key.
 
+    An example of adding the Telerik NuGet server with an API key.
     ```XML
     <?xml version="1.0" encoding="utf-8"?>
     <configuration>
@@ -70,8 +59,8 @@ You have the option to create a NuGet.Config file on the application level (it w
     </packageSources>
     <packageSourceCredentials>
         <MyTelerikFeed>
-        <add key="Username" value="api-key" />
-        <add key="ClearTextPassword" value="%MY_API_KEY%" />
+            <add key="Username" value="api-key" />
+            <add key="ClearTextPassword" value="%MY_API_KEY%" />
         </MyTelerikFeed>
     </packageSourceCredentials>
     <!-- more options follow here -->
