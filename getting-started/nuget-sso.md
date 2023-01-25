@@ -1,6 +1,6 @@
 ---
-title: Uging Telerik NuGet with SSO Account
-description: Using Telerik Nuget alongside SSO account
+title: Using Telerik NuGet with SSO Account
+description: Using Telerik Nuget alongside an SSO account
 slug: telerik-nuget-sso
 position: 100
 publish: false
@@ -35,7 +35,7 @@ Generating a key for the Telerik NuGet server (https://nuget.telerik.com/v3/inde
 
 Instead of entering a username and password through a Visual Studio prompt or a CLI command, the NuGet key must be provided through the NuGet.Config file. 
 
-You have the option to create a NuGet.Config file on the application level (it will overwrite any global NuGet.Config files and will be applicable only for the specific application) or to use a global NuGet.Config file (it will be valid for all applications unless explicitly overwritten by an application NuGet.Config file). [Learn more details about NuGet.Config configuration and location on each operating system here...](https://learn.microsoft.com/en-us/nuget/consume-packages/configuring-nuget-behavior)
+You have the option to create a NuGet.Config file on the application level (it will overwrite any global NuGet.Config files and configuration will be applicable only for the specific application) or to use a global NuGet.Config file (it will be valid for all applications unless explicitly overwritten by an application NuGet.Config file). [Learn more details about NuGet.Config configuration and location on each operating system here...](https://learn.microsoft.com/en-us/nuget/consume-packages/configuring-nuget-behavior)
 
 
 - Close all instances of Visual Studio.
@@ -73,4 +73,4 @@ You have the option to create a NuGet.Config file on the application level (it w
 
 - Re-open your .NET application in Visual Studio and restore the NuGet packages.
 
-That's it! With the above configuration in place, you can now access the Telerik NuGet and download & install the needed libraries without enterting credentials.
+That's it! With the above configuration in place, you can now access the Telerik NuGet and download & install the needed libraries without entering credentials.
