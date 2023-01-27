@@ -18,7 +18,7 @@ Some Telerik products (like [FiddlerCore](https://docs.telerik.com/fiddlercore/g
 
 >tip NuGet keys are helpful not only for Telerik users with Google Auth / SSO accounts but also for CI users and desktop developers. Learn more about the idea of NuGet keys and how to use them through [this excellent blog post by Lance MacCarthy](https://www.telerik.com/blogs/announcing-nuget-keys).
 
-### Generate NuGet Key
+### Generating a NuGet Key
 
 Generating a key for the Telerik NuGet server (https://nuget.telerik.com/v3/index.json) is fast and easy:
 
