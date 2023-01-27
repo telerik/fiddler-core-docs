@@ -10,7 +10,7 @@ publish: false
 # Using Telerik Nuget with Single Sign-On
 
 
-Progress Telerik expanded the account sign-in and login opportunities, and now users can create a Telerik account through Google Authentication or by using custom SSO providers. While that change aims to ease the accessibility and usage of the whole Telerik system, it also presents a challenge for those who want to use a NuGet library through the Telerik NuGet server.
+Progress Telerik expanded the account sign-in and login options, and now you can create a Telerik account through Google Authentication or by using custom SSO providers. While that change aims to ease the accessibility and usage of the whole Telerik system, it also presents a challenge for those who want to use a NuGet library through the Telerik NuGet server.
 
 ## Why and How to use a NuGet Key
 
