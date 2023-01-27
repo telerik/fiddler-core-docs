@@ -70,7 +70,7 @@ You have the option to create a NuGet.Config file on the application level (it w
 
     ```
 
-    It is crucial that you use the **ClearTextPassword** option (and not **Password**). Note that while you can directly copy/paste the Telerik NuGet key, it is not a good practice in terms of security. Once again, you can learn how to protect your api key from [the Lance blog post](https://www.telerik.com/blogs/announcing-nuget-keys) that we mentioned earlier.
+    >Always use the `ClearTextPassword` option (not `Password`). Note that while you can directly copy/paste the Telerik NuGet key, it is not a good practice in terms of security. You can learn how to protect your API key from [Lance's blog post on NuGet keys](https://www.telerik.com/blogs/announcing-nuget-keys).
 
 
 - Re-open your .NET application in Visual Studio and restore the NuGet packages.
