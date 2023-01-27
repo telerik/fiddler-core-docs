@@ -22,11 +22,11 @@ Some Telerik products (like [FiddlerCore](https://docs.telerik.com/fiddlercore/g
 
 Generating a key for the Telerik NuGet server (https://nuget.telerik.com/v3/index.json) is fast and easy:
 
-- Open the [NuGet keys management page](https://www.telerik.com/account/downloads/nuget-keys). Alternatively, navigate to that page through **Account Overview** > **Downloads** > **Manage NuGet Keys**
+1. Open the [NuGet keys management page](https://www.telerik.com/account/downloads/nuget-keys). Alternatively, navigate to that page through **Account Overview** > **Downloads** > **Manage NuGet Keys**
 
-- Click the **Generate Key** button to create a new NuGet key. 
+1. Click the **Generate Key** button to create a new NuGet key. 
 
-- Copy and then store the value before replacing the contents of your clipboard. Note that this is the only time that you will see the key. Each generated key is valid for two years (or until explicitly deleted).
+1. Copy and then store the value before replacing the contents of your clipboard. Note that this is the only time that you will see the key. Each generated key is valid for two years (or until explicitly deleted).
 
 ![Generate new key](./images/nuget-keys-telerik-001.png)
 
@@ -38,41 +38,40 @@ Instead of entering a username and password through a Visual Studio prompt or a 
 You have the option to create a NuGet.Config file on the application level (it will overwrite any global NuGet.Config files and configuration will be applicable only for the specific application) or to use a global NuGet.Config file (it will be valid for all applications unless explicitly overwritten by an application NuGet.Config file). [Learn more details about NuGet.Config configuration and location on each operating system here...](https://learn.microsoft.com/en-us/nuget/consume-packages/configuring-nuget-behavior)
 
 
-- Close all instances of Visual Studio.
+1. Close all instances of Visual Studio.
 
-- Navigate to the directory where the NuGet.Config file resides. [Learn where is the location of NuGet.Config on each operating system here...](https://learn.microsoft.com/en-us/nuget/consume-packages/configuring-nuget-behavior#config-file-locations-and-uses)
+1. Navigate to the directory where the NuGet.Config file resides. [Learn where is the location of NuGet.Config on each operating system here...](https://learn.microsoft.com/en-us/nuget/consume-packages/configuring-nuget-behavior#config-file-locations-and-uses)
 
-- Open the NuGet.Config file or create one if the file does not exist.
+1. Open the NuGet.Config file or create one if the file does not exist.
 
-- Add the Telerik NuGet server in the package source section through a custom key (in the demo case, the key is named **MyTelerikFeed**)
+1. Add the Telerik NuGet server in the package source section through a custom key (in the demo case, the key is named **MyTelerikFeed**)
 
 1. Add the generated Telerik NuGet key in the `packageSourceCredentials` section:
+
    1. Add a `Username` key with the value `api-key`
+   
    1. Add a `ClearTextPassword` key with the value of the generated Telerik NuGet key.
 
-    An example of adding the Telerik NuGet server with an API key.
     ```XML
     <?xml version="1.0" encoding="utf-8"?>
     <configuration>
-    <packageSources>
-        <clear/>
-        <add key="nuget.org" value="https://api.nuget.org/v3/index.json" protocolVersion="3" />
-        <add key="MyTelerikFeed" value="https://nuget.telerik.com/v3/index.json" protocolVersion="3"/>
-    </packageSources>
-    <packageSourceCredentials>
-        <MyTelerikFeed>
-            <add key="Username" value="api-key" />
-            <add key="ClearTextPassword" value="%MY_API_KEY%" />
-        </MyTelerikFeed>
-    </packageSourceCredentials>
-    <!-- more options follow here -->
+        <packageSources>
+            <clear/>
+            <add key="nuget.org" value="https://api.nuget.org/v3/index.json" protocolVersion="3" />
+            <add key="MyTelerikFeed" value="https://nuget.telerik.com/v3/index.json" protocolVersion="3"/>
+        </packageSources>
+        <packageSourceCredentials>
+            <MyTelerikFeed>
+                <add key="Username" value="api-key" />
+                <add key="ClearTextPassword" value="%MY_API_KEY%" />
+            </MyTelerikFeed>
+        </packageSourceCredentials>
     </configuration>
-
     ```
 
     >Always use the `ClearTextPassword` option (not `Password`). Note that while you can directly copy/paste the Telerik NuGet key, it is not a good practice in terms of security. You can learn how to protect your API key from [Lance's blog post on NuGet keys](https://www.telerik.com/blogs/announcing-nuget-keys).
 
 
-- Re-open your .NET application in Visual Studio and restore the NuGet packages.
+1. Re-open your .NET application in Visual Studio and restore the NuGet packages.
 
 That's it! With the above configuration in place, you can now access the Telerik NuGet and download & install the needed libraries without entering credentials.
