@@ -1,6 +1,6 @@
 ---
 title: Using Telerik NuGet with SSO Account
-description: Using Telerik Nuget alongside an SSO account
+description: Learn how to use API keys for authentication with the Telerik NuGet server when you have an SSO account and cannot use a username and password. 
 slug: telerik-nuget-sso
 position: 100
 publish: false
