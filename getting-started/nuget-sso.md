@@ -46,7 +46,9 @@ You have the option to create a NuGet.Config file on the application level (it w
 
 - Add the Telerik NuGet server in the package source section through a custom key (in the demo case, the key is named **MyTelerikFeed**)
 
-- Add the generated Telerik NuGet key through the **packageSourceCredentials** section by adding a **Username** key with the value **api-key** and a **ClearTextPassword** key with the value of the generated Telerik NuGet key.
+1. Add the generated Telerik NuGet key in the `packageSourceCredentials` section:
+   1. Add a `Username` key with the value `api-key`
+   1. Add a `ClearTextPassword` key with the value of the generated Telerik NuGet key.
 
     An example of adding the Telerik NuGet server with an API key.
     ```XML
