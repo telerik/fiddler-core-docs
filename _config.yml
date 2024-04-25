@@ -51,8 +51,8 @@ defaults:
 has_kb_portal: true
 has_api_reference: true
 
-# Feedback Form ID
-ff-sheet-id: 2753d516-bb0c-85f5-3898-3620db972174
+
+productCode: FIDDLERCORE
 
 # The google services configuration
 google_analytics: UA-111455-1
