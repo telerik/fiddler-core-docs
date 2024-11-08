@@ -9,7 +9,7 @@ position: 8
 
 The following steps demonstrate how users can use the Telerik NuGet server to include our suite in their solution and/or update to the latest available version.
 
-The credentials needed to access the Telerik NuGet server are the same as you use to log into your [Telerik account](https://www.telerik.com/account). The recommended approach to authenticate is to [generate]({%slug telerik-nuget-sso%}#generating-a-nuget-key) and [use]({%slug telerik-nuget-ss0%}#using-the-nuget-key-for-authentication) the Telerik NuGet key.
+The credentials needed to access the Telerik NuGet server are the same as you use to log into your [Telerik account](https://www.telerik.com/account). The recommended approach to authenticate is to [generate]({%slug telerik-nuget-sso%}#generating-a-nuget-key) and [use]({%slug telerik-nuget-sso%}#using-the-nuget-key-for-authentication) the Telerik NuGet key.
 
 ## Visual Studio
 

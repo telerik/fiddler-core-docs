@@ -3,7 +3,6 @@ title: Generating and Using Telerik NuGet Key
 description: Learn how to use API keys for authentication with the Telerik NuGet server when you have an SSO account and cannot use a username and password. 
 slug: telerik-nuget-sso
 position: 100
-publish: true
 ---
 
 # Generating and Using Telerik NuGet Key
