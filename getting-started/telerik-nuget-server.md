@@ -41,7 +41,7 @@ Users have to find the **FiddlerCore** package and install it to their projects 
 
 ![](images/nuget-server/nuget-vs-add-packages.png)
 
->tip You will need to autheticate when usiong the Telerik NuGet server. The recommended approach is to [generate and use a Telerik NuGet key({%slug telerik-nuget-sso%})].
+>tip You will need to autheticate when usiong the Telerik NuGet server. The recommended approach is to [generate and use a Telerik NuGet key]({%slug telerik-nuget-sso%}).
 
 ## Troubleshooting
 
