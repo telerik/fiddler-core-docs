@@ -57,7 +57,7 @@ The following default implementations for `INetworkConnectionsDetector` are prov
 - `MacNetworkConnectionsDetector`: Detector for Mac-specific network connections.
 - `LinuxNetworkConnectionsDetector`: Detector for Linux-specific network connections.
 
->noteThe built-in connection detectors are OS-specific and will throw exception if invoked on not supported platforms.
+>note The built-in connection detectors are OS-specific and will throw exception if invoked on not supported platforms.
 
 ## Next Steps
 
