@@ -82,7 +82,7 @@ The following configuration methods of `FiddlerCoreStartupSettingsBuilder` are a
 
 #### Common settings:
 
-- `ListenOnPort(int)`: Specifies the port on which FiddlerCore will listen. If 0 is used, random port is assigned.
+- `ListenOnPort(ushort port)`: Specifies the port on which FiddlerCore will listen. If 0 is used, random port is assigned.
 - `AllowRemoteClients()`: Allows FiddlerCore to accept requests from outside of the current machine, e.g. remote computers and devices.
 
 >warning Be cautious when allowing remote clients to connect to FiddlerCore. If an attacker is able to proxy its traffic through this FiddlerCore instance, it could circumvent IPSec traffic rules and intranet firewalls.
@@ -103,13 +103,13 @@ FiddlerApplication.Prefs.SetStringPref("fiddler.proxy.pacfile.text", "return 'PR
 
 - `ChainToUpstreamGateway()`: Sets the current LAN connection's proxy settings as an upstream gateway proxy. For example, if the application is running in a corporate environment behind a corporate proxy, the corporate proxy will be used as an upstream gateway proxy for FiddlerCore.
 >note Chaining when upstream gateway proxy settings are configured to use PAC file is supported only on Windows.
-- `SetUpstreamProxySettingsTo(ProxySettings)`: Sets the FiddlerCore upstream proxy settings as specified in the passed instance for ProxySettings class.
+- `SetUpstreamProxySettingsTo(ProxySettings proxySettings)`: Sets the FiddlerCore upstream proxy settings as specified in the passed instance for ProxySettings class.
 
 #### Other settings:
 
 - `EnableHTTP2()`: Enables the support for capturing HTTP/2 traffic. Available with FiddlerCore version 6.x.x and above.
 - `DecryptSSL()`:  Enables decryption of HTTPS traffic. You should have a CertificateProvider loaded with trusted certificate. For more details see [Use Custom Root Certificate]({%slug use-custom-root-certificate %}) article.
-- `UseClientTlsProvider(customProvider)`: Sets a custom client TLS provider for Fiddler. The provider will be used to authenticate an existing connection and return a stream to read/write data from/to it. Available with FiddlerCore version 6.x.x and above.
+- `UseClientTlsProvider(IClientTlsConnectionProvider customClientTlsProvider)`: Sets a custom client TLS provider for Fiddler. The provider will be used to authenticate an existing connection and return a stream to read/write data from/to it. Available with FiddlerCore version 6.x.x and above.
 
 ## Handling Events
 
