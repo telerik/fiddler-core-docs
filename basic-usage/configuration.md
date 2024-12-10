@@ -109,8 +109,7 @@ FiddlerApplication.Prefs.SetStringPref("fiddler.proxy.pacfile.text", "return 'PR
 
 - `EnableHTTP2()`: Enables the support for capturing HTTP/2 traffic. Available with FiddlerCore version 6.x.x and above.
 - `DecryptSSL()`:  Enables decryption of HTTPS traffic. You should have a CertificateProvider loaded with trusted certificate. For more details see [Use Custom Root Certificate]({%slug use-custom-root-certificate %}) article.
-- `UseClientTlsProvider(customProvider)`: Enables you to set custom TLS provider as specfiied in the passed instance of type (IClientTlsConnectionProvider)[https://docs.telerik.com/fiddlercore/api/fiddler.iclienttlsconnectionprovider]. Available with FiddlerCore version 6.x.x and above.
-- `OptimizeThreadPool(custom)`: Optimizes the thread pool to better handle multiple simultaneous threads. This is often convenient, as each `Session` is handled in a different thread. Under the hood, this methods uses [`ThreadPool.SetMinThreads`](https://docs.microsoft.com/en-us/dotnet/api/system.threading.threadpool.setminthreads) with a value larger that the default one.
+- `UseClientTlsProvider(customProvider)`: Sets a custom client TLS provider for Fiddler. The provider will be used to authenticate an existing connection and return a stream to read/write data from/to it. Available with FiddlerCore version 6.x.x and above.
 
 ## Handling Events
 
