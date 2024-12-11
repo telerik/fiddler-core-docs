@@ -6,9 +6,7 @@ published: True
 position: 60
 ---
 
-
 # Session Flags
-
 
 A field in each **Session** object contains flags that control the processing of the session. The flags can be accessed by **oSession.oFlags["flagname"]** or by using the default indexer on the **Session** object: **oSession["flagname"]**.
 
@@ -27,14 +25,11 @@ A field in each **Session** object contains flags that control the processing of
 - While you can call **oFlags.Add("flagname")**, this will throw an exception if the flag already exists.  It's better to just set the value: **oFlags["flagname"] = "value";**
 - You can create new flags that attach metadata to a given session. To avoid naming conflicts, it's recommended that you choose distinctive flagnames. For example: **addon.acme.loggingFlag**.
 
-
-
 ## Host Flags
 
 - **x-overrideHost** - Provide the _Host:Port_ combination, which should be used for DNS resolution purposes. Note that this mechanism does not change the HOST header on the request and thus is not useful if there's an upstream gateway.
 - **x-hostIP** - Indicates the IP address of the server used for this request. **Read-only** flag.
 - **x-overrideGateway** - Provide the Host:Port combination of a gateway that should be used to proxy this request, or DIRECT to send the request directly to the origin server.
-
 
 ## Client Flags
 
@@ -43,12 +38,10 @@ A field in each **Session** object contains flags that control the processing of
 - **x-clientport** - Indicates the port on the client that sent this request. **Read-only** flag.
 - **x-ConnectResponseRemoveConnectionClose** - Use during the **FiddlerApplication.RequestHeadersAvailable** or **FiddlerApplication.BeforeRequest** event, so that when FiddlerCore responds to the client's CONNECT request with **_"200 Connection established"_**, it will not add the **_"Connection: close"_** header. This header is known to be controversial for the CONNECT response, and it causes problems with some clients.
 
-
 ## Socket Reuse Flags
 
 - **x-serversocket** - String containing data about the reuse status of the server socket. **Read-only** flag.
 - **x-securepipe** - String containing data about the reuse status of a secure server socket. **Read-only** flag.
-
 
 ## Decryption and Authentication Flags
 
@@ -56,7 +49,6 @@ A field in each **Session** object contains flags that control the processing of
 - **https-Client-Certificate** - Filename of client certificate (e.g. .CER) that should be attached to this secure request.
 - **x-OverrideCertCN** - String specifying the hostname that should appear in the CN field of this CONNECT tunnel's Fiddler-generated certificate.
 - **x-SuppressProxySupportHeader** - Prevent FiddlerCore from adding a "Proxy-Support: Session-Based-Authentication" header to HTTP/401 or HTTP/407 responses that request Negotiate or NTLM authentication.
-
 
 ## Performance Flags
 

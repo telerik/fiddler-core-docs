@@ -48,6 +48,15 @@ You should use this event to act when a session is completed. For example, notif
 ```
 >tip These are only the most commonly used handlers. For the full list of events check [FiddlerApplication's API reference](/api/fiddler.fiddlerapplication).
 
+## FiddlerApplication.ClientCertificateProvider 
+
+You can use the `ClientCertificateProvider` field to set custom client certificate for specific hosts and you don't want to implement your own custom TLS Connection provider (through the `UseClientTlsProvider()` startup method). The `ClientCertificateProvider` field is available with FiddlerCore version 6.x.x and above.
+
+
+```sh
+FiddlerApplication.ClientCertificateProvider = localCertificateSelectionCallback;
+```
+
 ## Next Steps
 
 - [Import/export sessions]({%slug import-export-sessions%})
