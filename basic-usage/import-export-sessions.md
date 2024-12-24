@@ -1,6 +1,5 @@
 ---
 title: Import and Export Sessions
-
 slug: import-export-sessions
 tags: import-export-sessions
 published: True
@@ -31,6 +30,8 @@ You can export sessions with FiddlerCore by using the following code:
 ```c#
     bool success = Utilities.WriteSessionArchive(filename, sessions.ToArray(), password, false);
 ```
+
+>tip With FiddlerCore version 6.0.0 and above, the SAZ archive will contain additional information about various metrics, such as timings and sizes, through the `SessionMetrics` class.
 
 ## Custom SAZ Provider
 

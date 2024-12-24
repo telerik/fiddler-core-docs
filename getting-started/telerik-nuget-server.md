@@ -59,4 +59,5 @@ Now, you can reopen Visual Studio and access the Telerik NuGet server.
 
 ## Next Steps
 
+- [Generate and use Telerik NuGet key instead of using credentials]({%slug telerik-nuget-sso%})
 - [FiddlerCore Configuration]({%slug configuration%})

@@ -15,10 +15,7 @@ res_type: kb
 | Product  | FiddlerCore  |
 | Product Version | 5.0.1 |
 
-
 #### Description
-
-# Modifying a Response with FiddlerCore
 
 To modify an HTTP response, ensure the session is set to **buffered mode**. 
 
