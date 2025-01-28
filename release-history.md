@@ -12,7 +12,7 @@ position: 300
 
 #### Breaking Changes
 
-- Dropped support for .NET Framework.
+- Dropped support for .NET Framework version 4.8 or lower.
 - Deprecated `OptimizeThreadPool` configuration option.
 - The `SendBodyAsync` method in `ClientChatter` now returns an integer that represents the size of the data being transferred.
 - The `SendDataAsync` method in `PipeBase` now returns an integer that represents the size of the data being transferred
