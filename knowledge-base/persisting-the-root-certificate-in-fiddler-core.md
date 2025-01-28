@@ -8,7 +8,6 @@ ticketid: 1429862
 res_type: kb
 ---
 
-
 #### Environment
 
 |   |   |
@@ -16,11 +15,9 @@ res_type: kb
 | Product  | Fiddler Core  |
 | Product Version | 4.6.20191.7809 |
 
-
 #### Description
 
 FiddlerCore uses different APIs for certificate creation than the Desktop Version. By default, FiddlerCore includes the CertMaker and BCMakeCert assemblies for use with the Bouncy Castle API but doesn't persist the certificate by default. The Bouncy Castle API is recommended because it can be used across multiple platforms.
-
 
 ## Persisting and Reusing Certificates
 

@@ -119,7 +119,7 @@ Learn more on how to use the FiddlerCore events in the [Capture HTTP/S Traffic](
 
 ## Shutdown
 
-`FidlerCore can be shut down using the following method of `FiddlerApplication`
+FidlerCore can be shut down using the following method of `FiddlerApplication`
 - `Shutdown()`: Shuts down FiddlerCore, and reverts the proxy settings to the original ones, in case they were modified on startup.
 >note If there is traffic in progress when calling `FiddlerApplication.Shutdown()`, some of the background threads handling the sessions may throw `ObjectDisposedException` or `NullReferenceException`. 
 
