@@ -24,7 +24,7 @@ position: 300
 #### Improvements
 
 - Added support for TLS 1.3
-- Support for HTTP/2 thorugh the `EnableHTTP2` configuration option.
+- Support for HTTP/2 through the `EnableHTTP2` configuration option.
 - Support for adding custom TLS provider through the `UseClientTlsProvider` configuration option.
 - The `SessionMetrics` has additional information for different timings and sizes throughout the session lifecycle.
 - The SAZ archive now contains additional information for timings and sizes.
