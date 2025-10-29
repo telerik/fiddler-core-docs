@@ -1,0 +1,57 @@
+top-navigation-product: fiddler-core
+path-prefix: /fiddlercore/documentation
+default-title-prefix: FiddlerCore
+
+primary-color: "#27c106" # Fiddler green
+
+product-id: 1608
+product-code: FIDDLERCORE
+product-name: Progress Telerik FiddlerCore
+product-url: https://www.telerik.com/fiddlercore
+product-trial-url: https://www.telerik.com/try/fiddlercore
+
+contribute-url: https://github.com/telerik/fiddler-core-docs/edit/master
+
+search-engine-id: 001595215763381649090:bhf815yqanw # TODO get a new one for FiddlerCore
+# where should we add the google analytics and tag manager codes (refer to _config.yml)?
+avatar-path: ./images/common/avatar-ninja.svg # TODO get a FiddlerCore NINJA
+no-results-image-path: ./images/common/no-results.svg # TODO get a FiddlerCore no-results.png
+table-layout: fixed
+enable-tabbed-code-blocks: true
+
+gitLastCommitDateEnabled: true
+
+cta-overview: '@ProductLink is a powerful .NET library that allows you to capture and modify HTTP and HTTPS traffic.'
+cta-intro: '@ProductLink is a FiddlerCore is a .NET class library you can integrate into your .NET applications. Its available in .NET Standard 2.0, .NET Framework 4.0, and .NET Framework 4.5 flavors, which allows using it on Windows, Linux, Mac, and any other platform implementing .NET Standard.'
+
+img-max-width: 100%
+center-images: false
+
+meta:
+    '*':
+        hideCta: true #consult if we want to hide the CTA on all pages (currently incorrectly sjhowing 30-days trial for Fiddler Everywhere)
+    getting-started:
+        title: Getting Started
+        position: 10
+    basic-usage:
+        title: Basic Usage
+        position: 20
+    knowledge-base:
+        title: Knowledge Base
+        position: 100
+        relativeUrl: /knowledge-base
+        hideChildren: true
+        res_type: kb
+    licensing: 
+        title: Licensing
+        position: 200
+    api:
+        title: API Reference
+        position: 300
+        relativeUrl: /api
+        hideChildren: true
+        res_type: api
+
+redirects: 
+- from: ^/$
+  to: /introduction

@@ -59,4 +59,4 @@ The following code explains how to trust your root certificate.
 
 ## Next Steps
 
-- [Import/export sessions]({%slug import-export-sessions%})
+- [Import/export sessions](slug://import-export-sessions)

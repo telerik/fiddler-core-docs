@@ -13,15 +13,18 @@ This article explains everything you need to know about FiddlerCore before you s
 
 ## System Requirements
 
-You can check the requirements for FiddlerCore suite in the [System Requirements]({%slug system-requirements%}) help article.
+You can check the requirements for FiddlerCore suite in the [System Requirements](slug://system-requirements) help article.
 
 ## Download FiddlerCore
 
 See how to download the library in the following help articles:
 
-* [Download Product Files]({%slug download-product-files%})
-* [Use Telerik NuGet Server]({%slug telerik-nuget-server%})
+* [Download Product Files](slug://download-product-files)
+* [Use Telerik NuGet Server](slug://telerik-nuget-server)
 
 ## Next Steps
 
-[Check the system requirements]({%slug system-requirements%})
+[Check the system requirements](slug://system-requirements)
+[Using API Key to get FiddlerCore from Nuget](slug://telerik-nuget-sso)
+[Basic FiddlerCore configuration](slug://configuration)
+[Capturing HTTPS traffic with FiddlerCore](slug://capture-https-traffic)

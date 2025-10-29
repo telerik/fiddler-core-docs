@@ -11,7 +11,7 @@ position: 30
 
 This article explains how to capture HTTP/S traffic with FiddlerCore
 
-Once FiddlerCore is [configured]({%slug configuration %}), it starts to listen for a traffic on the background. When it captures any session, it notifies you by raising the following events:
+Once FiddlerCore is [configured](slug://configuration), it starts to listen for a traffic on the background. When it captures any session, it notifies you by raising the following events:
 
 >tip The following event handlers are invoked on session-handling **background threads**. 
 >
@@ -46,7 +46,8 @@ You should use this event to act when a session is completed. For example, notif
         Console.WriteLine($"Finished session: {session.fullUrl}");
     }
 ```
->tip These are only the most commonly used handlers. For the full list of events check [FiddlerApplication's API reference](/api/fiddler.fiddlerapplication).
+<!-- add API reference link to fiddler.fiddlerapplication-->
+>tip These are only the most commonly used handlers. For the full list of events check FiddlerApplication's API reference.
 
 ## FiddlerApplication.ClientCertificateProvider 
 
@@ -59,4 +60,4 @@ FiddlerApplication.ClientCertificateProvider = localCertificateSelectionCallback
 
 ## Next Steps
 
-- [Import/export sessions]({%slug import-export-sessions%})
+- [Import/export sessions](slug:// import-export-sessions)

@@ -41,4 +41,4 @@ Below you could find a list of the available files:
 
 ## Next Steps
 
-- [FiddlerCore Configuration]({%slug configuration%})
+- [FiddlerCore Configuration](slug://configuration)
