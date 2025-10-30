@@ -1,5 +1,5 @@
 top-navigation-product: fiddler-core
-path-prefix: /fiddlercore/documentation
+path-prefix: /fiddler/fiddlercore/documentation
 default-title-prefix: FiddlerCore
 
 primary-color: "#27c106" # Fiddler green
