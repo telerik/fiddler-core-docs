@@ -12,8 +12,7 @@ product-trial-url: https://www.telerik.com/try/fiddlercore
 
 contribute-url: https://github.com/telerik/fiddler-core-docs/edit/master
 
-search-engine-id: 001595215763381649090:bhf815yqanw # TODO get a new one for FiddlerCore
-# where should we add the google analytics and tag manager codes (refer to _config.yml)?
+search-engine-id: c55c60e3f44d34dfd # Seach engine ID for FiddlerCore docs
 avatar-path: ./images/common/avatar-ninja.svg # TODO get a FiddlerCore NINJA
 no-results-image-path: ./images/common/no-results.svg # TODO get a FiddlerCore no-results.png
 table-layout: fixed
