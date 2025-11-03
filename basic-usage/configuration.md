@@ -50,6 +50,7 @@ class Program
 To configure FiddlerCore, you can use `FiddlerCoreStartupSettingsBuilder` class, which encapsulates the logic for creating `FiddlerCoreStartupSettting` instance, which in turn can be used as an argument for `FiddlerApplication.Startup(FiddlerCoreStartupSettings)` method.
 
 `FiddlerCoreStartupSettingsBuilder` provides fluent API, for example a convenient usage is:
+
 ```c#
 FiddlerCoreStartupSettings startupSettings =
     new FiddlerCoreStartupSettingsBuilder()
@@ -74,7 +75,6 @@ FiddlerApplication.AfterSessionComplete += session =>
 {
     Console.WriteLine($"Finished session: {session.fullUrl}");
 }
-
 FiddlerApplication.Startup(startupSettings);
 ```
 
@@ -89,7 +89,7 @@ The following configuration methods of `FiddlerCoreStartupSettingsBuilder` are a
 
 #### System proxy settings:
 
-> There are a lot of possible systems and types of connections which might have to be modified in order to set proper proxy settings, and the following methods handle only the most common scenarios. For more advanced proxy configuration, see [Register as System Proxy]({%slug register-as-system-proxy %}) article.
+> There are a lot of possible systems and types of connections which might have to be modified in order to set proper proxy settings, and the following methods handle only the most common scenarios. For more advanced proxy configuration, see [Register as System Proxy](slug://register-as-system-proxy) article.
 
 - `RegisterAsSystemProxy()`: Modifies the local LAN connection's proxy settings to point to the port on which FiddlerCore is listening on localhost. 
 - `MonitorAllConnections()`: Modifies all system connections' proxy settings to point to the port on which FiddlerCore is listening on localhost.
@@ -108,14 +108,15 @@ FiddlerApplication.Prefs.SetStringPref("fiddler.proxy.pacfile.text", "return 'PR
 #### Other settings:
 
 - `EnableHTTP2()`: Enables the support for capturing HTTP/2 traffic. Available with FiddlerCore version 6.x.x and above.
-- `DecryptSSL()`:  Enables decryption of HTTPS traffic. You should have a CertificateProvider loaded with trusted certificate. For more details see [Use Custom Root Certificate]({%slug use-custom-root-certificate %}) article.
+- `DecryptSSL()`:  Enables decryption of HTTPS traffic. You should have a CertificateProvider loaded with trusted certificate. For more details see [Use Custom Root Certificate](slug://use-custom-root-certificate) article.
 - `UseClientTlsProvider(IClientTlsConnectionProvider customClientTlsProvider)`: Sets a custom client TLS provider for Fiddler. The provider will be used to authenticate an existing connection and return a stream to read/write data from/to it. Available with FiddlerCore version 6.x.x and above.
 
 ## Handling Events
 
-The `FiddlerApplication` class exposes numerous events like `BeforeRequest`, `BeforeResponse`, `AfterSessionComplete`, and many more. Full list of all supported events can be found in the [FiddlerCore API reference](https://docs.telerik.com/fiddlercore/api/fiddler.fiddlerapplication#events).
+<!-- add API reference link to fiddler.fiddlerapplication#events-->
+The `FiddlerApplication` class exposes numerous events like `BeforeRequest`, `BeforeResponse`, `AfterSessionComplete`, and many more. Full list of all supported events can be found in the FiddlerCore API reference.
 
-Learn more on how to use the FiddlerCore events in the [Capture HTTP/S Traffic]({%slug capture-https-traffic %}) article.
+Learn more on how to use the FiddlerCore events in the [Capture HTTP/S Traffic](slug://capture-https-traffic) article.
 
 ## Shutdown
 
@@ -125,5 +126,5 @@ FidlerCore can be shut down using the following method of `FiddlerApplication`
 
 ## Next Steps
 
-- [Register as System Proxy]({%slug register-as-system-proxy %})
-- [Use Custom Root Certificate]({%slug use-custom-root-certificate %})
+- [Register as System Proxy](slug://register-as-system-proxy)
+- [Use Custom Root Certificate](slug://use-custom-root-certificate)

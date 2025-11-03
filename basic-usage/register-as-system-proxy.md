@@ -23,7 +23,7 @@ FiddlerCoreStartupSettings startupSettings =
 FiddlerApplication.Startup(startupSettings);
 ``` 
 
-There are more basic methods affecting the system proxy settings in the FiddlerCoreStartupSettings. You can read more in [Configuration/Proxy settings]({%slug configuration %}#system-proxy-settings) article.
+There are more basic methods affecting the system proxy settings in the FiddlerCoreStartupSettings. You can read more in [Configuration/Proxy settings](slug://configuration#system-proxy-settings) article.
 
 ## Advanced approach
 Instead of using the basic configuration methods, you can manually modify the proxy settings. The logic for modifying the system connections' proxy settings is separated in the Telerik.NetworkConnections assembly. 
@@ -61,5 +61,5 @@ The following default implementations for `INetworkConnectionsDetector` are prov
 
 ## Next Steps
 
-- [Capture HTTP/S Traffic]({%slug capture-https-traffic %})
+- [Capture HTTP/S Traffic](slug://capture-https-traffic)
 

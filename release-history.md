@@ -39,7 +39,7 @@ position: 300
 
 #### Features
 
-- Add x-`ConnectResponseRemoveConnectionClose` session flag (documented in the [Client flags]({%slug fiddler-core-session-flags%}#client-flags) section).
+- Add x-`ConnectResponseRemoveConnectionClose` session flag (documented in the [Client flags](slug://fiddler-core-session-flags#client-flags) section).
 
 ## v5.0.0 FiddlerCore
 

@@ -37,5 +37,5 @@ In order to develop applications with **Telerik FiddlerCore** you need to have t
 
 ## Next Steps
 
-* [Download Product Files]({%slug download-product-files%})
-* [Use Telerik NuGet Server]({%slug telerik-nuget-server%})
+* [Download Product Files](slug://download-product-files)
+* [Use Telerik NuGet Server](slug://telerik-nuget-server)
