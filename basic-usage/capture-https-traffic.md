@@ -60,4 +60,4 @@ FiddlerApplication.ClientCertificateProvider = localCertificateSelectionCallback
 
 ## Next Steps
 
-- [Import/export sessions](slug:// import-export-sessions)
+- [Import/export sessions](slug://import-export-sessions)
