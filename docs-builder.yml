@@ -14,7 +14,7 @@ contribute-url: https://github.com/telerik/fiddler-core-docs/edit/master
 
 search-engine-id: c55c60e3f44d34dfd # Seach engine ID for FiddlerCore docs
 avatar-path: ./images/common/avatar-ninja.svg # TODO get a FiddlerCore NINJA
-no-results-image-path: ./images/common/no-results.svg # TODO get a FiddlerCore no-results.png
+no-results-image-path: ./images/common/ninja-no-results.svg # TODO get a FiddlerCore no-results.png
 table-layout: fixed
 enable-tabbed-code-blocks: true
 
