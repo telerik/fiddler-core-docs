@@ -35,18 +35,18 @@ meta:
     basic-usage:
         title: Basic Usage
         position: 20
-    knowledge-base:
-        title: Knowledge Base
-        position: 100
-        relativeUrl: /knowledge-base
-        hideChildren: true
-        res_type: kb
     licensing: 
         title: Licensing
         position: 200
+    knowledge-base:
+        title: Knowledge Base
+        position: 400
+        relativeUrl: /knowledge-base
+        hideChildren: true
+        res_type: kb
     api:
         title: API Reference
-        position: 300
+        position: 1000
         relativeUrl: /api
         hideChildren: true
         res_type: api
