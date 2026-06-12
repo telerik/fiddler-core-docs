@@ -12,7 +12,7 @@ Thank you for choosing Progress® Telerik® FiddlerCore!
 
 ## What Is FiddlerCore and Why Do I Need It?
 
-FiddlerCore is a .NET class library you can integrate into your .NET applications. It's available in .NET Standard 2.0, .NET Framework 4.0, and .NET Framework 4.5 flavors, which allows using it on Windows, Linux, Mac, and any other platform implementing .NET Standard.
+FiddlerCore is a .NET class library you can integrate into your .NET applications. The latest version targets .NET Standard 2.1 and can be used on Windows, Linux, Mac, and other platforms that implement .NET Standard. Support for .NET Framework 4.8 and earlier is available only in older FiddlerCore versions.
 
 FiddlerCore allows you to capture and modify HTTP and HTTPS traffic just like [Fiddler Everywhere](https://www.telerik.com/fiddler/fiddler-everywhere), without any of the Fiddler user interface.
 
